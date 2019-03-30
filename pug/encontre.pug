@@ -1,0 +1,20 @@
+extends ./_layouts/striort.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"+ version)
+    link(rel="stylesheet", href="css/style.css"+ version)
+    
+
+block content
+    // encontre
+    section.relative.section
+        include ./_partials/encontre/_profissinais.pug
+        
+
+
+block append scriptsJS
+    script(src="js/app.js"+ version)
+    script(src="js/profissionais.js")
+    script(src="js/encontre.js")
+    

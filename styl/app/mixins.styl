@@ -1,0 +1,37 @@
+// adiciona o prefixo de todos os browers
+prefixe( $prop, $value )
+	-webkit-{$prop} $value
+	-moz-{$prop} 	$value
+	-ms-{$prop} 	$value
+	-o-{$prop} 		$value
+	{$prop} 		$value
+
+
+flexBox()
+	display flex
+	flex-wrap: wrap
+	& > *
+		flex-grow: 1
+
+
+// adiciona uma trasição ao mouse over
+tr-hover($pro, $init_value, $end_value, $time)
+	{$pro} $init_value
+	transition $pro $time
+	&:hover
+		{$pro} $end_value		
+
+	
+backImg($url)
+	background-image url($url)
+	background-size	cover
+	
+remify(value) { /* separate mixin, so it can be used elsewhere */
+    u = unit(value);
+
+    if (u is 'px') {
+        return unit(value/10, 'rem');
+    } else {
+        return unit(value, u);
+	}
+}

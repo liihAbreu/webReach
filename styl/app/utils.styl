@@ -1,0 +1,87 @@
+.relative
+    position: relative
+
+.absolute 
+    position: absolute
+
+.z-alto
+    z-index: 2
+
+.padding-zero
+    padding: 0
+
+.margin-zero
+    margin: 0
+
+.align-flex
+    display flex
+
+.align-center
+    @extends .align-flex
+    justify-content: center
+    & > *
+        align-self: center
+
+.wrap-flex
+    flex-wrap: wrap
+.col-same-height
+    @extends .align-center
+    & > *
+        align-self: center
+
+.back-cover
+    background-size: cover
+
+.back-contain
+    background-size: contain
+
+.to-right
+    float: right 
+
+.to-left
+    float: left 
+
+.text-overflow
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+
+.flex-center-vertical
+    display: flex
+    & > *
+        align-self center
+
+.display-Flex
+    @extends .align-flex
+    width: 100%
+    justify-content: space-between
+    margin-top: 40px
+    flex-wrap: wrap
+    .flex-item
+        padding: 40px
+        text-align: center
+        width: 30%
+
+.agenda-flex-novo
+    & > *
+        width: 20%
+        text-align: center
+
+.bold
+    font-weight: bold
+
+.borda
+    border: 1px solid #c2c2c2
+    margin-bottom: 20px
+
+.icone-verde
+    margin-top: -100px
+
+@media screen and (max-width: $queries['medium'])
+    .display-Flex
+        margin-top: 40px
+        .flex-item
+            width: 100%
+            &:nth-child(2)
+                margin-top: 100px
+                margin-bottom: 100px

@@ -1,0 +1,50 @@
+extends ./_layouts/striort.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    section#cursos.section
+        .container
+            .row
+                .col-sm-12.bg-fundo
+                    h1.text-verde-bm.bold Mussum Ipsum
+                    h2.text-cinza Mussum Ipsum
+                    h3.text-cinza Mussum Ipsum
+                    h4.text-cinza Mussum Ipsum
+                    h5.text-cinza Mussum Ipsum
+                    h6.text-cinza Mussum Ipsum
+                    p.text-cinza.font-extra-small Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. 
+                        |Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Per aumento de cachacis, eu reclamis.
+                    p.text-cinza.font-small Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. 
+                        |Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Per aumento de cachacis, eu reclamis.
+                    p.text-cinza.font-medium Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. 
+                        |Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Per aumento de cachacis, eu reclamis.
+                    p.text-cinza.font-large Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. 
+                        |Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Per aumento de cachacis, eu reclamis.
+                    p.text-inverse.font-extra-large.bg-verde Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. 
+                        |Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Per aumento de cachacis, eu reclamis.
+             
+                .display-flex
+                    .flex-item.bg-black
+                        p.text-inverse black
+                    .flex-item.bg-inverse
+                        p.text-black inverse
+                    .flex-item.bg-fundo
+                        p.text-black fundo
+                    .flex-item.bg-verde-bm
+                        p.text-inverse verde-bm
+                    .flex-item.bg-cinza
+                        p.text-inverse cinza
+                    .flex-item.bg-verde
+                        p.text-inverse verde
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+

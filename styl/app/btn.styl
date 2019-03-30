@@ -1,0 +1,62 @@
+$btn-boder-radius = 0px
+$color-danger = #c10500
+$color-sucess = #5cb85c
+$color-warning = #f0ad4e
+button
+	border-radius: 0
+	border 0
+.btn
+	border-radius $btn-boder-radius
+	padding 10px 40px
+	border 1px solid $colors['oceano']
+	color: $colors['inverse']
+	background-color:$btn-bg 
+	transition color 1s, box-shadow 1s
+	&:hover
+		background-color: $btn-bg
+		color: $btn-text
+		box-shadow: 2px 0px 8px $shadow-color
+	&:focus
+		background-color: $colors['oceano']
+		color: $btn-text
+	&:active
+		background-color: $btn-bg
+		color: $btn-text
+.btn-default
+	background-color: $btn-bg
+	color: $colors['inverse'];
+	border 1px solid $btn-text
+	&:hover
+		background-color: $btn-bg
+		color: $colors['inverse'];
+		border 1px solid $btn-text
+	&:focus
+		background-color: $btn-bg
+		color: $colors['inverse'];
+.btn-danger
+.btn-success
+.btn-warning
+	border-radius $btn-boder-radius
+	padding 10px 40px
+	color: $btn-text
+
+.btn-danger
+	background-color $color-danger
+	&:hover
+		background-color lightness($color-danger, 40%)
+
+.btn-success
+	background-color $color-sucess
+	&:hover
+		background-color lightness($color-sucess, 40%)
+
+.btn-warning
+	background-color $color-warning
+	&:hover
+		background-color lightness($color-warning, 40%)
+
+@media screen and (max-width: 480px)
+	.btn 
+		border-radius: 0px;
+		padding: 10px 20px;
+

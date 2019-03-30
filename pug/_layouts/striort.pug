@@ -1,0 +1,143 @@
+block settings
+    - var title = 'STRIORT®'
+    - var version = "?v=1.0.7"
+doctype
+html(lang="pt")
+    head
+        include ../_partials/meta-tags
+        include ../_partials/icons
+        title #{title}
+        block CSS
+            link(rel="stylesheet", href="css/plugins.css")
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" +  version )
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.min.css" +  version  )           
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119525716-1"></script><script> window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-119525716-1'); </script>
+        
+
+    body
+
+        include ../_partials/_index/face.pug
+
+        #loader
+            img.loader-img.img-responsive(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif" + version, alt="Lodder")
+        .ir-topo#ir-topo(style="display:none")
+            a#ir-topos(href="#banners", class="goesTo link-topo")
+                img(class="seta",src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/seta.png" + version, alt="")
+
+        // menu-nobile
+        .menu-mob-flutuante#menu-mob-flutuante.img-back-leort(style="display:none;")
+            ul.display-menu-mob
+                li 
+                    a(class="link-topo",href="#inscricao", class="goesTo") INSCRIÇÃO
+                li 
+                    a(class="link-topo",href="#agenda", class="goesTo") AGENDA
+                li 
+                    a(class="link-topo",href="#resultados", class="goesTo") Resultados
+                li 
+                    a(class="link-topo goesTo",href="#curso", class="goesTo" ) O striort®
+                li 
+                    a(class="link-topo",href="#prof",class="goesTo"  ) Educadoras
+                li 
+                    a(class="link-topo",href="#depoimentos", class="goesTo" ) Depoimentos
+                li 
+                    a(class="link-topo",href="#diamond", class="goesTo" ) Diamond
+                li 
+                    a(class="link-topo",href="#teaser", class="goesTo" ) Teaser
+            .fechar-menu
+                img(src="img/fechar.png", alt="Botão Fechar")
+
+        // Header navegação
+        header#topo
+            .container#cabeca
+                .row.center-vertical
+                    .logo-leort.col-xs-6.col-xs-push-3.col-md-2.col-md-push-0
+                        a(href="/")
+                            img.logo(src="img/striortlogo.svg", alt="Logo Bothanica Mineral")
+                    .menu-leort.col-xs-3.col-xs-pull-6.col-md-8.col-md-pull-0
+                        // Navegação para desk
+                        nav.visible-md.visible-lg
+                            ul.display-menu
+                                li 
+                                    a(class="link-topo",href="#inscricao", class="goesTo") INSCRIÇÃO
+                                li 
+                                    a(class="link-topo",href="#agenda", class="goesTo") AGENDA
+                                li 
+                                    a(class="link-topo",href="#resultados", class="goesTo") Resultados
+                                li 
+                                    a(class="link-topo",href="#curso",  class="goesTo" )  striort®
+                                li 
+                                    a(class="link-topo",href="#prof", class="goesTo" ) Educadoras
+                                //li 
+                                    a(class="link-topo",href="#na-midia", class="goesTo") MIDIA
+                                li 
+                                    a(class="link-topo",href="#depoimentos", class="goesTo" ) Depoimentos
+                                li 
+                                    a(class="link-topo",href="#diamond", class="goesTo" ) Diamond
+                                li 
+                                    a(class="link-topo teaser",href="#teaser", class="goesTo" ) Teaser
+                        // Navegação para mob
+                        nav.visible-xs.visible-sm
+                                .menu-mob
+                                    span.icon-bar
+                                    span.icon-bar  
+                                    span.icon-bar                   
+
+
+                    .rede-sociais.col-xs-3.col-md-2
+                        a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank", rel="noopener")
+                            img(src="img/insta.svg" + version, alt="Instagram")
+                        a(href="https://www.facebook.com/Bothanicamineral/" target="_blank", rel="noopener")
+                            img(src="img/face.svg" + version, alt="Facebook")
+                        a(href="https://www.youtube.com/channel/UCXt09yqtrEngqUL8KANHuDA" target="_blank", rel="noopener")
+                            img(src="img/youtube.svg" + version, alt="Youtube")
+
+            .line-blue
+
+
+
+        block content
+
+
+        block footer   
+            footer.bg-verde-texto
+                .container
+                    .col-sm-2
+                        h5.bold Institucional
+                        ul.footer-texto
+                            li 
+                                a(href="https://bothanicamineral.com.br/quem-somos" target="_blank", rel="noopener") Sobre a Empresa
+                            li 
+                                a(href="https://bothanicamineral.com.br/fale-conosco" target="_blank", rel="noopener") Fale Conosco
+                    .col-sm-2
+                        h5.bold Sou Profissional
+                        ul.footer-texto
+                            li 
+                                a(href="https://bothanicamineral.com.br/" target="_blank", rel="noopener") Benefícios
+                            li 
+                                a(href="https://bothanicamineral.com.br/produtos" target="_blank", rel="noopener") Protocolos
+                            li 
+                                a(href="https://bothanicamineral.com.br/cursos" target="_blank", rel="noopener") Cursos
+
+                    .col-sm-4
+                        h5.bold Bothanica Mineral®
+                        div(data-is, data-is-api="/lib/instashow/api/index.php", data-is-source="@bothanicamineral", data-is-width="auto", data-is-layout="grid", data-is-columns="3", data-is-rows="3", data-is-lang="en", data-is-color-popup-follow-butto, data-is-limit="9")
+                        .my-instashow
+
+                    .col-sm-4
+                        .footer-texto.logo-footer
+                            a(href="https://www.bothanicamineral.com.br/" target="_blank", rel="noopener")
+                                img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/logo.png", alt="Bothanica Mineral", srcset="")
+                .container-fluid.logo-biz
+                        a(href="http://www.happybiz.com.br/" target="_blank",  rel="noopener")
+                            img.logo-biz-img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/logo-biz.png" + version, alt="HappyBiz")
+
+                   
+
+
+
+
+        block scriptsJS
+            script(src="https://code.jquery.com/jquery-2.2.4.min.js" + version)
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" + version, type="text/javascript")
+            script(src="js/elfsight-instagram-feed.js")

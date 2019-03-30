@@ -1,0 +1,169 @@
+header
+	height: auto
+	padding-top 20px
+	position: fixed
+	left 0
+	top: 0
+	width: 100%
+	z-index 4
+	.container
+		padding-bottom: 20px
+	.rede-sociais
+		text-align: left
+		max-width remify(130px)
+	
+.logo-striort
+	text-align: left 
+
+.logo-container
+	padding: 15px 0
+
+.center-vertical
+	@extends .flex-center-vertical
+
+img.logo
+	max-width 97px
+footer
+	@extend .text-inverse
+	p 
+		@extend .light
+
+
+.rede-sociais
+	padding-right: 10px
+	display: flex
+	justify-content: space-around
+	img
+		width: 30px
+
+header
+	background-color: alpha($colors["inverse"], 0.9)
+
+
+
+.arrow
+	top 34%
+	position absolute
+	z-index 2
+	cursor: pointer
+	
+.blackPop
+	background-color alpha(black, 80%)
+	position: fixed
+	top 0
+	left 0
+	width: 100%
+	height 100%
+	z-index 9999999
+	@extends .align-center
+
+
+.flex-popUp
+	padding-top: 50px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	max-height: 40%
+	overflow: auto
+	border: 1px solid #03c7a3
+	box-shadow: inset 3px 2px 3px 2px #028a71
+	& > *
+		width: 33%
+		margin-bottom 20px
+
+
+.popUp
+	background-color: $colors['verde-texto']
+	width: 60%
+	position relative
+	min-width 300px
+	padding 30px
+	background-image: url('../img/back-stri.jpg')
+	background-repeat: no-repeat
+	background-size: 3px 100%;
+	color white
+	text-align: center
+	img
+		max-width: 100px
+		margin auto
+		margin-top -40px
+		margin-bottom: 15px
+	.fechar-agenda
+		cursor pointer
+		position: absolute
+		top 20px
+		margin-top 0
+		right -10px
+		border-radius: 50
+
+.agenda-item
+	margin-top 20px
+	p
+		margin 0
+	p.data
+		padding 10px
+		display: inline
+		background-color: $colors['verde']
+	p.cidade 
+		color: $colors['inverse']
+		margin-top 10px
+
+			
+
+
+@media screen and (max-width: $queries['medium'])
+	.flex-popUp
+		& > *
+			width: 100%
+	header
+		height: auto
+		background-repeat: repeat-x
+		padding-top 15px
+		.container
+			padding-bottom: 15px
+		.rede-sociais
+			text-align: right
+			img
+				width: 33px
+
+	.logo-leort
+		text-align: center
+
+
+
+
+@media screen and (max-width: $queries['small'])
+	.flex-popUp
+		& > *
+			width: 100%
+	.rede-sociais-insta
+	.rede-sociais-face
+		margin: auto
+		max-width 30px
+		display block
+
+
+@media screen and (max-width: 478px)
+	.rede-sociais
+		padding 0 remify(3px)
+		flex-wrap: wrap;
+		img
+			max-width 30px
+
+// slicks dots
+.slick-dots
+	position: absolute;
+	bottom: 10px
+	z-index: 2;
+.slick-dotted.slick-slider
+	margin-bottom: 0
+
+.slick-dots li button:before
+	font-size: 12px
+	color: $colors['verde-texto']
+.slick-dots li.slick-active button:before
+	font-size: 12px
+	color: $colors['verde-texto']
+	opacity 1
+
+	

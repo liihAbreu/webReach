@@ -1,0 +1,74 @@
+
+p, ul, .font-style 
+	letter-spacing remify($letterSpacing)
+	margin-bottom remify(20px)
+	line-height: $lineHeight
+	font-size: $font-size['medium']
+
+
+ul.list-bm
+	list-style: none;
+	padding: 0;
+	padding-left: 15px
+	margin: 0;
+	li
+		line-height: 20px
+		margin-bottom: 0
+		list-style: url("../img/icone-da-lista.png")
+
+ul.list-bm-escuro
+	list-style: none;
+	padding: 0;
+	padding-left: 15px
+	margin: 0;
+	li
+		line-height: 20px
+		margin-bottom: 0
+		list-style: url("../img/icone-lista-escuro.png");
+		
+
+
+@media screen and (max-width: $queries['medium'])
+	#acoes
+		ul
+			li
+				padding-left: 1em
+
+
+create-hs()
+	for hs, value in $hs-sizes
+		{hs}
+			font-size remify(value)
+		@media screen and (max-width: $queries['medium'])
+			{hs}
+				font-size remify(value) * $font-medium
+				text-align $font-medium-align
+		@media screen and (max-width: $queries['small'])
+			{hs}
+				font-size remify(value) * $font-xs
+				text-align $font-xs-align
+				
+// /cria tamanhos diferentes para as fontes
+fonts-size( )
+	for fonts, value in $font-size
+		.font-{fonts}
+			@extend .font-style
+			font-size value
+
+.uppercase
+	text-transform: uppercase
+
+.light
+	font-weight: 100
+.bold
+	font-weight: bold
+
+.capitular:first-letter
+	font-size: 30px
+	float: left
+	margin-right: 5px
+	font-weight: bold
+
+
+create-hs()
+fonts-size()

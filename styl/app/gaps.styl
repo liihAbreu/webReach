@@ -1,0 +1,89 @@
+// padding para todos os lados
+
+for pd, value in $pad_marg
+	.pd-{pd}
+		padding value
+		@media screen and (max-width: $queries['medium'])
+			padding floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			padding floor(unit(value / 3, 'px'))
+
+// padding para o topo			
+for pd, value in $pad_marg
+	.pd-{pd}-top
+		padding-top value
+		@media screen and (max-width: $queries['medium'])
+			padding-top floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			padding-top floor(unit(value / 3, 'px'))
+			
+// padding para o bottom			
+for pd, value in $pad_marg
+	.pd-{pd}-bottom
+		padding-bottom value
+		@media screen and (max-width: $queries['medium'])
+			padding-bottom floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			padding-bottom floor(unit(value / 3, 'px'))
+
+// padding para o right			
+for pd, value in $pad_marg
+	.pd-{pd}-right
+		padding-right value
+		@media screen and (max-width: $queries['medium'])
+			padding-right floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			padding-right floor(unit(value / 3, 'px'))
+
+// padding para o left			
+for pd, value in $pad_marg
+	.pd-{pd}-left
+		padding-left value
+		@media screen and (max-width: $queries['medium'])
+			padding-left floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			padding-left floor(unit(value / 3, 'px'))
+
+// MARGIN //
+
+for md, value in $pad_marg
+	.mg-{md}
+		margin value
+		@media screen and (max-width: 728px)
+			margin floor(unit(value / 2, 'px'))
+
+		
+for pd, value in $pad_marg
+	.mg-{pd}-top
+		margin-top value
+		@media screen and (max-width: $queries['medium'])
+			margin-top floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			margin-top floor(unit(value / 3, 'px'))
+			
+// padding para o bottom			
+for pd, value in $pad_marg
+	.mg-{pd}-bottom
+		margin-bottom value
+		@media screen and (max-width: $queries['medium'])
+			margin-bottom floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			margin-bottom floor(unit(value / 3, 'px'))
+
+		
+for pd, value in $pad_marg
+	.mg-{pd}-right
+		margin-right value
+		@media screen and (max-width: $queries['medium'])
+			margin-right floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			margin-right floor(unit(value / 3, 'px'))
+
+		
+for pd, value in $pad_marg
+	.mg-{pd}-left
+		margin-left value
+		@media screen and (max-width: $queries['medium'])
+			margin-left floor(unit(value / 2, 'px'))
+		@media screen and (max-width: $queries['small'])
+			margin-left floor(unit(value / 3, 'px'))
