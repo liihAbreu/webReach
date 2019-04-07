@@ -1,4 +1,4 @@
-extends ./_layouts/striort.pug
+extends ./_layouts/layout.pug
 
 block append CSS
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
@@ -7,73 +7,7 @@ block append CSS
     
 
 block content
-    #agemdaPop
-        .blackPop
-            .popUp.clearfix
-                img.img-responsive.block-center(src="img/agenda-placa.png" + version , alt="Agenda")  
-                .flex-popUp#agendaTop
-                    .fundo-spinner
-                        .col-sm-12
-                            img#spinner.center-block(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif"  + version, alt="carregando")
 
-                p.infos INFORMAÇÕES E INSCRIÇÕES
-                p.infos +55 11 4508-8998
-                p.infos ana@bm.com.vc
-
-                .fechar-agenda
-                    img.img-responsive.block-center(src="img/fechar-agenda.png" + version, alt="")
-    // banner rotativo
-    section#banners.relative
-        .container-fluid#banner-container
-            .row
-                #banner   
-                    // Banners rotativos                
-                    include ./_partials/_index/_banners.pug
-
-    // esteticiscas carrocel
-    section.section#resultados.background-esteticista(style="position:relative;")
-        include ./_partials/_index/_esteticistas.pug
-
-    // Teaser
-    section.section#teaser
-        include ./_partials/_index/_teaser.pug
-
-    // conheça mais sobre o tratamento
-    section#curso.section
-        include ./_partials/_index/_curso.pug
-
-        // conteudo programatico
-        include ./_partials/_index/_programa.pug
-                        
-
-    // inscrição
-    section#inscricao
-        include ./_partials/_index/_inscricao.pug
-
-
-    // ministrantes
-    section#prof.section
-        include ./_partials/_index/_prof.pug
-        
-    //agenda
-    section#agenda.bg-verde-texto.section
-        include ./_partials/_index/_agenda.pug
-
-    // Midia
-    //section#na-midia
-        include ./_partials/_index/_midia.pug
-
-    // depoimentos 
-    section#depoimentos.section.back-acoes(style="background-color:#f4f8f9")
-        include ./_partials/_index/_depoimentos.pug
-
-    // Diamond
-    section#diamond.section.background-diamond
-        include ./_partials/_index/_diamond.pug
-
-    // outros cursos
-    section#outrosCursos.section
-        include ./_partials/_index/_outrosCurso.pug
 
 block append scriptsJS
     script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js", type="text/javascript")

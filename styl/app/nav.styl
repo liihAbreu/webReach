@@ -19,47 +19,50 @@
     flex-direction: column
     display: flex
     align-self: center
-    justify-content: flex-end
+    justify-content: center
     padding: 0
     li
         list-style: none
         text-align: center
-        font-size: 18px
-        text-transform: uppercase
+        font-size: 16px
         margin-top 10px
         a
             text-decoration: none
-            color: $colors['cinza']
+            color: $colors['text']
             transition: .3s
             &:hover
-                color: $colors['verde-texto']
+                color: $colors['text']
                 font-weight: bold
+                text-decoration underline
             &.ativo
-               color: $colors['verde-texto']
+               color: $colors['text']
                font-weight: bold
+               text-decoration underline
 .display-menu
     padding: 0
     margin 0
     display: flex
-    justify-content: flex-end
+    justify-content: center
     li
         list-style: none
-        text-transform: uppercase
-        margin-right: 20px
-        font-size: 13px
-        letter-spacing: -0.4px
+        margin-right: 40px
+        font-size: 14px
+        letter-spacing: 1.2px
+        font-weight bold
         &:last-child
             margin-right: 0
         a
             text-decoration: none
-            color: $colors['cinza']
+            color: $colors['text']
             transition: .3s
             &:hover
-                color: $colors['verde-agua']
+                color: $colors['text']
                 font-weight: bold
+                text-decoration underline
             &.ativo
-               color: $colors['verde-texto']
+               color: $colors['text']
                font-weight: bold
+               text-decoration underline
 .menu-mob
     cursor pointer
     span.icon-bar
@@ -68,7 +71,7 @@
         height 4px
         display: block
         border-radius 3px
-        background-color: $colors['verde']
+        background-color: $colors['text']
 
 .teaser
     animation: piscar-menu 1.5s infinite
