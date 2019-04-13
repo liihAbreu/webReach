@@ -53,16 +53,18 @@
             margin-right: 0
         a
             text-decoration: none
-            color: $colors['text']
+            color: $colors['text'];
             transition: .3s
             &:hover
-                color: $colors['text']
+                color: $colors['text'];
                 font-weight: bold
-                text-decoration underline
+                border-bottom 2px solid $colors['second'];
+                transition 1s 
             &.ativo
-               color: $colors['text']
+               color: $colors['text'];
                font-weight: bold
-               text-decoration underline
+               border-bottom 2px solid $colors['second'];
+               transition 1s
 .menu-mob
     cursor pointer
     span.icon-bar

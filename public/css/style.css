@@ -51,22 +51,19 @@ html {
 .align-flex,
 .align-center,
 .col-same-height,
-.display-Flex,
-.blackPop {
+.display-Flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .align-center,
-.col-same-height,
-.blackPop {
+.col-same-height {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .align-center > *,
-.col-same-height > *,
-.blackPop > * {
+.col-same-height > * {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1041,7 +1038,7 @@ button {
 }
 header {
   height: auto;
-  padding-top: 20px;
+  padding-top: 25px;
   position: fixed;
   left: 0;
   top: 0;
@@ -1051,29 +1048,47 @@ header {
 header .container {
   padding-bottom: 20px;
 }
-header .rede-sociais {
-  text-align: left;
-  max-width: 13rem;
+.logo {
+  width: 400px;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  margin-left: -195px;
 }
-.logo-striort {
-  text-align: left;
+.banners {
+  position: relative;
+  border-bottom: 2px solid #4b0f12;
+  padding-left: 0;
+  padding-right: 0;
 }
-.logo-container {
-  padding: 15px 0;
+.filtro {
+  width: 100%;
+  height: 660px;
+  background-color: rgba(0,0,0,0.6);
 }
-img.logo {
-  max-width: 97px;
+.benner-full {
+  background-image: url("/img/banner1.jpg");
+  width: 100%;
+  height: 660px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-.rede-sociais {
-  padding-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.benner-full2 {
+  background-image: url("/img/banner2.jpg");
+  width: 100%;
+  height: 660px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-.rede-sociais img {
-  width: 30px;
+.benner-full3 {
+  background-image: url("/img/banner3.jpg");
+  width: 100%;
+  height: 660px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .arrow {
   top: 34%;
@@ -1081,78 +1096,28 @@ img.logo {
   z-index: 2;
   cursor: pointer;
 }
-.blackPop {
-  background-color: rgba(0,0,0,0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999999;
-}
-.flex-popUp {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  max-height: 40%;
-  overflow: auto;
-  border: 1px solid #03c7a3;
-  box-shadow: inset 3px 2px 3px 2px #028a71;
-}
-.flex-popUp > * {
-  width: 33%;
-  margin-bottom: 20px;
-}
-.popUp {
-  background-color: #0f0f0f;
-  width: 60%;
-  position: relative;
-  min-width: 300px;
-  padding: 30px;
-  background-image: url("../img/back-stri.jpg");
+.bnt-acessibilidade {
+  background-color: #fff;
+  background-image: url("/img/acessibilidade.png");
+  width: 40px;
+  height: 40px;
   background-repeat: no-repeat;
-  background-size: 3px 100%;
-  color: #fff;
-  text-align: center;
-}
-.popUp img {
-  max-width: 100px;
-  margin: auto;
-  margin-top: -40px;
-  margin-bottom: 15px;
-}
-.popUp .fechar-agenda {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  margin-top: 0;
-  right: -10px;
-  border-radius: 50;
-}
-.agenda-item {
-  margin-top: 20px;
-}
-.agenda-item p {
-  margin: 0;
-}
-.agenda-item p.data {
+  background-position: center center;
+  background-size: 24px;
+  border-radius: 50%;
   padding: 10px;
-  display: inline;
-  background-color: #0f0f0f;
+  margin-left: 30px;
+  border: 2px solid #4b0f12;
+  position: fixed;
+  top: 25px;
+  right: 80px;
 }
-.agenda-item p.cidade {
-  color: #0f0f0f;
-  margin-top: 10px;
-}
-@media screen and (max-width: 768px) {
-  .flex-popUp > * {
-    width: 100%;
+@media screen and (max-width: 1024px) {
+  .logo {
+    top: 16vh;
   }
+}
+@media screen and (max-width: 992px) {
   header {
     height: auto;
     background-repeat: repeat-x;
@@ -1161,35 +1126,31 @@ img.logo {
   header .container {
     padding-bottom: 15px;
   }
-  header .rede-sociais {
-    text-align: right;
-  }
-  header .rede-sociais img {
-    width: 33px;
-  }
-  .logo-leort {
-    text-align: center;
+  .bnt-acessibilidade {
+    right: 15px;
+    top: 15px;
   }
 }
-@media screen and (max-width: 576px) {
-  .flex-popUp > * {
-    width: 100%;
-  }
-  .rede-sociais-insta,
-  .rede-sociais-face {
-    margin: auto;
-    max-width: 30px;
-    display: block;
+@media screen and (max-width: 768px) {
+  .bnt-acessibilidade {
+    right: 30px;
+    top: 15px;
+    background-size: 16px;
   }
 }
-@media screen and (max-width: 478px) {
-  .rede-sociais {
-    padding: 0 0.3rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+@media screen and (max-width: 695px) {
+  .logo {
+    margin-left: -100px;
+    width: 200px;
+    top: 30vh;
   }
-  .rede-sociais img {
-    max-width: 30px;
+}
+@media screen and (max-width: 320px) {
+  .bnt-acessibilidade {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    right: 15px;
   }
 }
 .slick-dots {
@@ -1202,15 +1163,18 @@ img.logo {
 }
 .slick-dots li button:before {
   font-size: 12px;
-  color: #0f0f0f;
+  color: #fff;
 }
 .slick-dots li.slick-active button:before {
   font-size: 12px;
-  color: #0f0f0f;
+  color: #fff;
   opacity: 1;
 }
 body {
   background-color: #0f0f0f;
+}
+.hide {
+  opacity: 0;
 }
 @media screen and (max-width: 340px) {
   .background-leort {
@@ -1507,12 +1471,14 @@ footer .logo-footer {
 .display-menu li a:hover {
   color: #fff;
   font-weight: bold;
-  text-decoration: underline;
+  border-bottom: 2px solid #4b0f12;
+  transition: 1s;
 }
 .display-menu li a.ativo {
   color: #fff;
   font-weight: bold;
-  text-decoration: underline;
+  border-bottom: 2px solid #4b0f12;
+  transition: 1s;
 }
 .menu-mob {
   cursor: pointer;

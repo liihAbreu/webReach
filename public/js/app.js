@@ -89,7 +89,7 @@
         focusOnSelect: false,
         pauseOnFocus: false,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 1500,
       });
 
       $('#galeriaEst').slick({
