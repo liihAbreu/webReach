@@ -31,26 +31,6 @@
   <body>
     <div id="loader"><img class="loader-img img-responsive" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif?v=1.0.0" alt="Lodder"></div>
     <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
-    <div class="container-fluid banners" id="banners" aria-disabled="true">
-      <div id="banner">
-        <div class="row">
-          <div class="benner-full">
-            <div class="filtro"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="benner-full2">
-            <div class="filtro"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="benner-full3">
-            <div class="filtro"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row"><img class="img-responsive center-block logo" src="img/logo-webreach.png" alt="Web Reach"></div>
-    </div>
     <!-- menu-nobile-->
     <div class="menu-mob-flutuante img-back-leort" id="menu-mob-flutuante" style="display:none;">
       <ul class="display-menu-mob">
@@ -62,10 +42,11 @@
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
     <!-- Header navegação-->
-    <header id="topo" role="menubar">
+    <header class="header-interno" id="topo" role="menubar">
       <div class="container-fluid" id="cabeca">
         <div class="row center-vertical">
-          <div class="col-sm-12 text-center">
+          <div class="col-sm-12 text-center menu-interno">
+            <div class="logo-interno"><a href="http://localhost:3000"><img class="img-responsive" src="img/logo-webReach.png" alt="home"></a></div>
             <!-- Navegação para desk-->
             <nav class="visible-md visible-lg">
               <ul class="display-menu">
@@ -81,7 +62,7 @@
                   <li> <a href="#"><img src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
                   <li><a href="#"><img src="img/maior.png" alt="Aumentar a fonte"></a></li>
                   <li><a href="#"><img src="img/menor.png" alt="Diminuir a fonte"></a></li>
-                  <li><a href="/"><img id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
+                  <li><a href="#"><img id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
                 </ul>
               </div>
             </div>
@@ -93,38 +74,29 @@
         </div>
       </div>
     </header>
-    <div role="main">
-      <section class="mg-40-top" aria-labelledby="tituloPalestras">
+    <div class="clearfix mg-80-top" role="main">
+      <section class="mg-80-top">
         <article>
           <div class="container">
             <div class="row">
-              <h2 class="text-center" id="tituloPalestras">Dicas de palestras sobre <br> o tema acessibilidade</h2>
-              <div class="bg-palestras col-sm-12">
-                <div class="palestras col-sm-6 text-center">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="460" height="315" src="https://www.youtube.com/embed/igGOeem6y4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <h4 class="text-center titulo-palestras">Talita Pagani - Acessibilidade Web Cognitiva - BrazilJS Conf 2016</h4><a class="text-center" href="https://www.youtube.com/watch?v=igGOeem6y4w" target="_blanck">Assistir</a>
-                </div>
-                <div class="palestras col-sm-6 text-center">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="460" height="315" src="https://www.youtube.com/embed/5FJJuEVt5sA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <h4 class="text-center titulo-palestras">Frontinsampa 2016 - Reinaldo Ferraz: Lang e Alt: Atributos da Pesada</h4><a class="text-center" href="https://www.youtube.com/watch?v=5FJJuEVt5sA" target="_blanck">Assistir</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="mg-40-top" aria-labelledby="tituloPorque">
-        <article class="bg-bolinhas">
-          <div class="container">
-            <div class="row">
-              <h2 class="text-center" id="tituloPorque">Porque fazer um site acessivel?</h2>
               <div class="col-sm-12">
-                <p>Para demonstrar um pouco mais da importancia da acessibilidade na web, segue o slider Acessibilidade - por que deixarmos de ser amadores para um público que espera mais de nós.</p>
-                <div class="apresentacao"><a href="https://www.slideshare.net/MarinaDomingues7/acessibilidade-por-que-deixarmos-de-ser-amadores-para-um-pblico-que-espera-mais-de-ns" target="_blanck"><img class="img-responsive center-block" src="img/apresentacao.jpg" alt="Acessibilidade - por que deixarmos de ser amadores para um público que espera mais de nós"></a></div>
+                <div class="bg-interno">
+                  <h2>Desenvolvendo o layout pensando em:</h2>
+                  <div class="dica">
+                    <div class="col-sm-6">
+                      <div class="bg-dica"><a href=""><img class="img-resposive center-block" src="img/autista.png" alt="imagem de uma criança autista brincando">
+                          <div class="titulo-dica">
+                            <h3>Autistas</h3>
+                          </div></a></div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="bg-dica"><a href=""><img class="img-resposive center-block" src="img/audicao.png" alt="imagem de uma criança autista brincando">
+                          <div class="titulo-dica">
+                            <h3>Deficiêntes Auditivos</h3>
+                          </div></a></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -20,21 +20,6 @@ html(lang="pt")
         .ir-topo#ir-topo(style="display:none")
             a#ir-topos(href="#banners", class="goesTo link-topo" title="Voltar para o topo")
                 img(class="seta",src="img/seta.png", alt="voltar para o topo")
-
-        .container-fluid.banners#banners(aria-disabled="true")
-            #banner
-                .row
-                    .benner-full
-                        .filtro
-                .row
-                    .benner-full2
-                        .filtro
-                .row
-                    .benner-full3
-                        .filtro
-            .row
-                img.img-responsive.center-block.logo(src="img/logo-webreach.png", alt="Web Reach")
-
         // menu-nobile
         .menu-mob-flutuante#menu-mob-flutuante.img-back-leort(style="display:none;")
             ul.display-menu-mob
@@ -51,10 +36,13 @@ html(lang="pt")
                 img(src="img/fechar.png", alt="Botão Fechar")
 
         // Header navegação
-        header#topo(role="menubar")
+        header#topo.header-interno(role="menubar")
             .container-fluid#cabeca
                 .row.center-vertical
-                    .col-sm-12.text-center
+                    .col-sm-12.text-center.menu-interno
+                        .logo-interno
+                            a(href="http://localhost:3000")
+                                img.img-responsive(src="img/logo-webReach.png", alt="home")
                         // Navegação para desk
                         nav.visible-md.visible-lg
                             ul.display-menu
@@ -67,7 +55,7 @@ html(lang="pt")
                                 li 
                                     a(class="link-topo",href="#curso",  class="goesTo" )  Contato
                         .acessibilidade
-                            a.btn.bnt-acessibilidade( href="#" aria-label="Ferramentas acessiveis")
+                            a.btn.bnt-acessibilidade(href="#" aria-label="Ferramentas acessiveis")
                             .btn-acessiveis(style="display:none;")
                                 ul
                                     li 
@@ -80,7 +68,7 @@ html(lang="pt")
                                         a(href="#")
                                             img(src="img/menor.png", alt="Diminuir a fonte")
                                     li
-                                        a(href="/")
+                                        a(href="#")
                                             img#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")   
                         
                         // Navegação para mob

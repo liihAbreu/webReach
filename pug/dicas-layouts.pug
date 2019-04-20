@@ -1,0 +1,35 @@
+extends ./_layouts/layout-interno.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"+ version)
+    link(rel="stylesheet", href="css/style.css"+ version)
+    
+
+block content
+    div.clearfix.mg-80-top(role="main")
+        section.mg-80-top
+            article
+                .container
+                    .row
+                        .col-sm-12
+                            .bg-interno
+                                h2 Desenvolvendo o layout pensando em:
+                                .dica
+                                    .col-sm-6
+                                        .bg-dica
+                                            a(href="")
+                                                img.img-resposive.center-block(src="img/autista.png", alt="imagem de uma criança autista brincando")
+                                                .titulo-dica
+                                                    h3 Autistas
+                                    .col-sm-6
+                                        .bg-dica
+                                            a(href="")
+                                                img.img-resposive.center-block(src="img/audicao.png", alt="imagem de uma criança autista brincando")
+                                                .titulo-dica
+                                                    h3 Deficiêntes Auditivos
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js", type="text/javascript")

@@ -82,8 +82,42 @@ footer
 	margin-left 30px
 	border 2px solid $colors['second'];
 	position fixed
-	top 25px
+	top 15px
 	right 80px
+	z-index: 2;
+
+.btn-acessiveis
+	position absolute
+	ul
+		list-style none
+		background-color #fff
+		padding-left: 0;
+		padding: 7px;
+		border-radius: 20px;
+		padding-top: 40px;
+		li
+			text-align center
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom 0
+			img 
+				width 30px
+				margin auto
+
+.btn-acessiveis 
+	position absolute
+	right 78px
+	top 0
+	cursor pointer
+
+.colorheader
+	background-color $colors['third'];
+	padding 20px 0
+	border-bottom 1px solid $colors['second'];
+	box-shadow 0 0 3px $colors['second'];
+
+.header-interno
+	padding-top 0
 
 @media screen and (max-width: 1024px)
 	.logo

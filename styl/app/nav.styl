@@ -4,7 +4,7 @@
     top 10px
     cursor pointer
     img 
-        max-width 40px
+        max-width 30px
 .menu-mob-flutuante
     display flex
     width: 100%
@@ -28,14 +28,14 @@
         margin-top 10px
         a
             text-decoration: none
-            color: $colors['text']
+            color: $colors['black']
             transition: .3s
             &:hover
-                color: $colors['text']
+                color: $colors['black']
                 font-weight: bold
                 text-decoration underline
             &.ativo
-               color: $colors['text']
+               color: $colors['black']
                font-weight: bold
                text-decoration underline
 .display-menu
@@ -75,9 +75,16 @@
         border-radius 3px
         background-color: $colors['text']
 
-.teaser
-    animation: piscar-menu 1.5s infinite
 
+.menu-interno
+    display flex
+    align-items: center
+    justify-content: space-around;
+    & > *
+        margin-right 15px
+    .logo-interno
+        img 
+            width 100px
 
 
 @media screen and (max-width: $queries['medium'])
