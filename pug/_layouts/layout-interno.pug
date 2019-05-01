@@ -35,14 +35,21 @@ html(lang="pt")
             .fechar-menu
                 img(src="img/fechar.png", alt="Botão Fechar")
 
+        
         // Header navegação
         header#topo.header-interno(role="menubar")
             .container-fluid#cabeca
-                .row.center-vertical
+                .row.center-vertical  
+                    // Navegação para mob
+                    nav.visible-xs.visible-sm
+                        .menu-mob
+                            span.icon-bar
+                            span.icon-bar  
+                            span.icon-bar
                     .col-sm-12.text-center.menu-interno
                         .logo-interno
                             a(href="http://localhost:3000")
-                                img.img-responsive(src="img/logo-webReach.png", alt="home")
+                                img.img-responsive.center-block(src="img/logo-webReach.png", alt="home")
                         // Navegação para desk
                         nav.visible-md.visible-lg
                             ul.display-menu
@@ -55,11 +62,11 @@ html(lang="pt")
                                 li 
                                     a(class="link-topo",href="#curso",  class="goesTo" )  Contato
                         .acessibilidade
-                            a.btn.bnt-acessibilidade(href="#" aria-label="Ferramentas acessiveis")
+                            a.btn.bnt-acessibilidade( href="#" aria-label="Ferramentas acessiveis")
                             .btn-acessiveis(style="display:none;")
                                 ul
                                     li 
-                                        a(href="#")
+                                        a
                                             img(src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
                                     li
                                         a(href="#")
@@ -68,15 +75,8 @@ html(lang="pt")
                                         a(href="#")
                                             img(src="img/menor.png", alt="Diminuir a fonte")
                                     li
-                                        a(href="#")
-                                            img#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")   
-                        
-                        // Navegação para mob
-                        nav.visible-xs.visible-sm
-                                .menu-mob
-                                    span.icon-bar
-                                    span.icon-bar  
-                                    span.icon-bar                   
+                                        a
+                                            img#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")                   
 
 
 

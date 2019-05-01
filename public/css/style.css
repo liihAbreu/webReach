@@ -157,7 +157,7 @@ ul,
   letter-spacing: 0.08rem;
   margin-bottom: 2rem;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 16px;
 }
 ul.list-bm {
   list-style: none;
@@ -203,32 +203,32 @@ footer p {
   font-weight: bold;
 }
 h1 {
-  font-size: 5.2rem;
+  font-size: 4.8rem;
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 4.680000000000001rem;
+    font-size: 4.32rem;
     text-align: left;
   }
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 4.16rem;
+    font-size: 3.84rem;
     text-align: center;
   }
 }
 h2 {
-  font-size: 4.4rem;
+  font-size: 3.8rem;
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 3.96rem;
+    font-size: 3.42rem;
     text-align: left;
   }
 }
 @media screen and (max-width: 576px) {
   h2 {
-    font-size: 3.52rem;
+    font-size: 3.04rem;
     text-align: center;
   }
 }
@@ -1096,6 +1096,25 @@ header .container {
   z-index: 2;
   cursor: pointer;
 }
+.acessibilidade {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .bnt-acessibilidade {
   background-color: #fff;
   background-image: url("/img/acessibilidade.png");
@@ -1106,15 +1125,9 @@ header .container {
   background-size: 24px;
   border-radius: 50%;
   padding: 10px;
-  margin-left: 30px;
   border: 2px solid #4b0f12;
-  position: fixed;
-  top: 15px;
-  right: 80px;
-  z-index: 2;
-}
-.btn-acessiveis {
-  position: absolute;
+  position: relative;
+  z-index: 3;
 }
 .btn-acessiveis ul {
   list-style: none;
@@ -1123,6 +1136,7 @@ header .container {
   padding: 7px;
   border-radius: 20px;
   padding-top: 40px;
+  margin-top: -42px;
 }
 .btn-acessiveis ul li {
   text-align: center;
@@ -1135,10 +1149,7 @@ header .container {
   width: 30px;
   margin: auto;
 }
-.btn-acessiveis {
-  position: absolute;
-  right: 78px;
-  top: 0;
+#fechar-acessivel {
   cursor: pointer;
 }
 .colorheader {
@@ -1164,31 +1175,12 @@ header .container {
   header .container {
     padding-bottom: 15px;
   }
-  .bnt-acessibilidade {
-    right: 15px;
-    top: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .bnt-acessibilidade {
-    right: 30px;
-    top: 15px;
-    background-size: 16px;
-  }
 }
 @media screen and (max-width: 695px) {
   .logo {
     margin-left: -100px;
     width: 200px;
     top: 30vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  .bnt-acessibilidade {
-    width: 30px;
-    height: 30px;
-    top: 12px;
-    right: 15px;
   }
 }
 .slick-dots {
@@ -1449,7 +1441,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(255,255,255,0.9);
+  background-color: #fff;
 }
 .display-menu-mob {
   -webkit-box-orient: vertical;
@@ -1542,13 +1534,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .menu-interno > * {
   margin-right: 15px;
 }
-.menu-interno .logo-interno img {
+.logo-interno {
+  margin-right: 50px;
+}
+.logo-interno img {
   width: 100px;
 }
 @media screen and (max-width: 768px) {
@@ -1561,6 +1557,21 @@ body {
   .display-menu li {
     margin-right: 15px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-interno {
+    background-color: #00182b;
+    border-bottom: 1px solid #4b0f12;
+  }
+  .menu-interno {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .menu-mob {
+    margin-left: 20px;
   }
 }
 @-webkit-keyframes rotacao {
@@ -1717,21 +1728,34 @@ body {
     font-size: 3rem;
   }
 }
+.bg-interno {
+  background-color: #00182b;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+  box-shadow: 0 0 3px #272626;
+}
 .dica {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .dica > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .bg-dica {
   background-color: #fff;
   width: 100%;
   border: 1px solid #4b0f12;
   border-radius: 5px;
+  position: relative;
+  margin-top: 30px;
 }
 .bg-dica a {
   display: -webkit-box;
@@ -1747,14 +1771,31 @@ body {
 }
 .bg-dica a img {
   padding: 20px 0;
+  height: 100%;
+  margin-bottom: 80px;
 }
 .bg-dica a .titulo-dica {
   text-align: center;
   background-color: #4b0f12;
   color: #fff;
   width: 100%;
-  height: 100%;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.conteudo > * {
+  border-bottom: 1px solid #4b0f12;
+  padding: 20px 10px;
+}
+.conteudo > *:last-child {
+  border: 0 solid #4b0f12;
+}
+.referencia ul {
+  list-style: none;
+  padding-left: 0;
+}
+.referencia ul li a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

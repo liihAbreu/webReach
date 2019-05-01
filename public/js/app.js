@@ -75,11 +75,11 @@
     });
     $('#fechar-acessivel').click(function(){
         $('.btn-acessiveis').fadeToggle();
-        $('.acessibilidade').focus();
+        $('.bnt-acessibilidade').focus();
     });
     
     window.addEventListener('scroll', function(){      
-        if($(this).scrollTop() > 150){
+        if($(this).scrollTop() > 100){
             $('header').addClass('colorheader');
         }else{
             $('header').removeClass('colorheader');

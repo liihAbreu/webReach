@@ -14,7 +14,7 @@
     top 0
     left 0;
     justify-content: center
-    background-color alpha(white, 0.9)
+    background-color alpha(white, 1)
 .display-menu-mob
     flex-direction: column
     display: flex
@@ -79,12 +79,14 @@
 .menu-interno
     display flex
     align-items: center
-    justify-content: space-around;
+    justify-content: center;
     & > *
         margin-right 15px
-    .logo-interno
-        img 
-            width 100px
+
+.logo-interno
+    margin-right: 50px;
+    img 
+        width 100px
 
 
 @media screen and (max-width: $queries['medium'])
@@ -98,7 +100,14 @@
             margin-right: 15px
             font-size: 14px
 
-
-
+@media screen and (max-width:991px)
+    .header-interno 
+        background-color $colors['third'];
+        border-bottom 1px solid $colors['second'];
+    .menu-interno
+        justify-content: center;
+        width: 100%;
+    .menu-mob
+        margin-left 20px
 
 

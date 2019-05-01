@@ -68,7 +68,17 @@ footer
 	position absolute
 	z-index 2
 	cursor: pointer
-	
+
+.acessibilidade
+	position fixed
+	top 15px
+	right 20px
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 .bnt-acessibilidade
 	background-color #fff;
 	background-image url('/img/acessibilidade.png')
@@ -79,15 +89,11 @@ footer
 	background-size 24px 
 	border-radius 50%
 	padding 10px
-	margin-left 30px
 	border 2px solid $colors['second'];
-	position fixed
-	top 15px
-	right 80px
-	z-index: 2;
+	position relative
+	z-index 3
 
 .btn-acessiveis
-	position absolute
 	ul
 		list-style none
 		background-color #fff
@@ -95,6 +101,7 @@ footer
 		padding: 7px;
 		border-radius: 20px;
 		padding-top: 40px;
+		margin-top -42px
 		li
 			text-align center
 			margin-bottom: 5px
@@ -104,10 +111,7 @@ footer
 				width 30px
 				margin auto
 
-.btn-acessiveis 
-	position absolute
-	right 78px
-	top 0
+#fechar-acessivel
 	cursor pointer
 
 .colorheader
@@ -130,15 +134,7 @@ footer
 		padding-top 15px
 		.container
 			padding-bottom: 15px
-	.bnt-acessibilidade
-		right 15px
-		top 15px
 
-@media screen and (max-width: 768px)
-	.bnt-acessibilidade
-		right 30px
-		top 15px
-		background-size 16px
 
 @media screen and (max-width: 695px)
 	.logo
@@ -146,12 +142,7 @@ footer
 		width 200px
 		top 30vh
 
-@media screen and (max-width: 320px)
-	.bnt-acessibilidade
-		width: 30px;
-		height: 30px;
-		top: 12px;
-		right: 15px;
+
 
 
 // slicks dots

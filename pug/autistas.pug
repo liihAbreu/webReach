@@ -1,0 +1,86 @@
+extends ./_layouts/layout-interno.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"+ version)
+    link(rel="stylesheet", href="css/style.css"+ version)
+    
+
+block content
+    div.clearfix(role="main" style="margin-top:80px;")
+        section(style="margin-top:40px;")
+            article
+                .container
+                    .row
+                        .col-sm-12
+                            .bg-interno
+                                h2.text-center.pd-20-bottom Autistas
+                                .conteudo
+                                    .item
+                                        h4 O que é o autismo:
+                                        p Segundo o artigo “Caracterização da Síndrome Autista”, a definição mais recente 
+                                            | parece ser a da DSM-IV-TR de 2002 (Kuperstein e Missalglia, 2005, p.1): “ O 
+                                            | transtorno Autista consiste na presença de um desenvolvimento comprometido ou 
+                                            | acentuadamente anormal da interação social e da comunicação e um repertório muito 
+                                            | restrito de atividade e interesses. As manifestações do transtorno variam 
+                                            | imensamente, dependendo do nível de desenvolvimento e da idade cronológica do indivíduo.”
+                                        p Os indivíduos com ASD ( Autism Spectrum Disorder) possuem uma elevada diversidade 
+                                            | de capacidades e personalidades. Estes podem “(..) exibir atrasos mentais 
+                                            | graves ou ser extremamente dotados nas suas aquisições e evitar o contato 
+                                            | social, outros mostram níveis elevados de afecto e prazer nas situações sociais. 
+                                            | Algumas pessoas (..) parecem letárgicas e com respostas lentificadas, mas outras são 
+                                            | muito ativas e parecem interagir constantemente com determinados aspectos do seu ambiente.” 
+                                            | (Dunlap, Pierce e Kay, 199, p. 2).
+                                    .item
+                                        h3.text-center Como fazer o layout respeitando as necessidades dos autistas
+                                        h4.pd-20-top Consistência Visual:
+                                        p Padronizar o layout, deixar todos os botões e labels iguais, construir um layout consistente, 
+                                            | se começou com o layout quadrado, permaneça com ele quadrado até o fim, autista gosta dessa 
+                                            | consistência visual, pois o permite ter uma certa antecipação do que ele encontrará ao dar 
+                                            | um scroll, ou mudar a página.
+                                        p Uma grande dificuldade com que se deparam até as crianças autistas mais aptas é a sua  inabilidade 
+                                            | para generalizar. Aarons e Gittens (1992) referem que elas até podem saber o que fazer e como 
+                                            | agir numa determinada situação, contudo são incapazes de usar essa experiência e de a adaptar 
+                                            | quando uma nova situação surge.
+                                        p Os indivíduos autistas tendem a manter a maioria da estimulação ambiente, insistência e perseverança 
+                                            | esta que ficou conhecida por insistence on sameness, algo que traduz “(...) um desejo ansiosamente 
+                                            | obsessivo para a manutenção do mesmo estado das coisas.”(Kanner, 1943, p.245 in Pereira, 1999, p.61).
+                                        p Os sentidos dos autistas são extremamente sensíveis, por isso não utilize cores muito brilhantes, com 
+                                            | muito contraste.
+                                        p Aarons e Gittens (1992) defendem que a percepção e o reconhecimento do estímulo visual constitui uma 
+                                            | das áreas de capacidade nas crianças autistas, constatando-se a sua frequente habilidade em 
+                                            | fazer coincidir formas e na elaboração de puzzles.
+                                    
+                                    .item
+                                        h4.pd-20-top O autista tem dificuldade em entender termos linguísticos, por isso:
+                                        ul
+                                            li Não usar metáforas, alguns autistas têm dificuldade em entender, acabam seguindo o sentido literal da frase.
+
+                                            li Colocar o mínimo de texto de possível, bem-disposto na tela, com espaços entre os textos e parágrafos e alinhado à esquerda, para que seja fácil o entendimento do texto.
+
+                                            li Deixar o site bem intuitivo, para facilitar a navegação.
+
+                                            li Deixar os links com cara de link e botão com cara de botão, para que apenas ao “bater o olho na página”, ele saiba o que são links e o que são botões.
+
+                                        p Nos autistas “(..) a sua deficiência é especificamente mais importante nos seguintes domínios: 
+                                            | compreensão da linguagem, utilização de aptidões verbais nas provas cognitivas (linguagem 
+                                            | interior ), jogo imaginativo e utilização de gestos.” ( Bartak, Rutter e Cox, 1975, in 
+                                            | Plument, Leboyer e Beiaudichon, 1987, p. 17 ). Outra característica apontada é a 
+                                            | incapacidade em utilizar linguagem concomitantemente para pensar e comunicar. Denota-se 
+                                            | ainda, a existência de estereótipas e repetição em eco do que é proferido- ecolalia 
+                                            | (Frith, 1996; Pereira, 1999; Plument, Leboyer e Beaudichon, 1987 ).
+
+                    .row
+                        .col-sm-12
+                            .bg-interno
+                                h5.text-left.pd-20-bottom Referências
+                                .referencia
+                                    ul
+                                        li 
+                                            a(href="http://www.psicologia.pt/artigos/textos/A0259.pdf") Caracterização da síndrome Autista
+                                   
+                                    
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js", type="text/javascript")
