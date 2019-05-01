@@ -1547,6 +1547,27 @@ body {
 .logo-interno img {
   width: 100px;
 }
+.item-sub-menu {
+  position: relative;
+}
+.item-sub-menu .sub-menu {
+  text-align: left;
+  position: absolute;
+  width: 200px;
+  padding-left: 0;
+  background-color: #00182b;
+  padding: 10px;
+  border: 1px solid #4b0f12;
+  opacity: 0;
+  -webkit-transform: translate(0, -138%);
+          transform: translate(0, -138%);
+  transition: 2s;
+}
+.item-sub-menu:hover .sub-menu {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
 @media screen and (max-width: 768px) {
   .display-menu li {
     margin-right: 20px;

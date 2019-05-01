@@ -53,8 +53,17 @@ html(lang="pt")
                         // Navegação para desk
                         nav.visible-md.visible-lg
                             ul.display-menu
-                                li 
-                                    a(class="link-topo",href="#inscricao", class="goesTo") Dicas para Layout
+                                li.item-sub-menu 
+                                    a(class="link-topo",href="http://localhost:3000/dicas-layouts.html", class="goesTo") Dicas para Layout
+                                    ul.sub-menu
+                                        li 
+                                            a(href="http://localhost:3000/autistas.html") Para Autistas
+                                        li 
+                                            a(href="http://localhost:3000/audicao.html") Para Deficiêntes Auditivos
+                                        li 
+                                            a(href="http://localhost:3000/dislexos.html") Para  Dislexos
+                                        li 
+                                            a(href="http://localhost:3000/visao.html") Para Baixa Visão
                                 li 
                                     a(class="link-topo",href="#agenda", class="goesTo") Leitores de Tela
                                 li 
