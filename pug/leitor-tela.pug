@@ -14,38 +14,30 @@ block content
                     .row
                         .col-sm-12
                             .bg-interno
-                                h2.text-center.pd-20-bottom Deficientes Visuais
+                                h2.text-center.pd-20-bottom Leitores de tela
                                 .conteudo
                                     .item
-                                        h4.text-left Como desenvolver o site respeitando as necessidades dos deficientes visuais:
-                                        p Para utilizar o computador, os usuários com história de deficiência geralmente utilizam 
-                                            | ferramentas e softwares específicos, ferramentas que são conhecidas como tecnologias 
-                                            | assistivas. Os usuários com baixa visão podem utilizar softwares ampliadores de tela, 
-                                            | como o magic da Freedom Scientific e o LentePro do NCE/UFRJ (Núcleo de Computação 
-                                            | Eletrônica da Universidade Federal do Rio de Janeiro). Os usuários cegos frequentemente 
-                                            | usam softwares chamados leitores de tela, como Jaws da Freedom Scientific, o Virtual da 
-                                            | MicroPower e o Window-Eyes da GW Micro, entre outros. Esses Softwares lêem em voz alta 
-                                            | os conteúdos que estão na tela do computador, permitindo que as pessoas cegas ouçam os 
-                                            | conteúdos de uma página web, ao invés de lê-los.
+                                        p Os leitores de tela funcionam indicando e lendo a localização do foco. Dentre as opções 
+                                            | disponíveis, estão o JAWS, o NVDA e, no caso do Mac, o VoiceOver - leitor que vem integrado 
+                                            | ao sistema operacional. Há também o Narrador no Windows, e outros.
                                         
-                                        p Os padrões de acessibilidade ajudam os projetistas e desenvolvedores de conteúdo web a identificar 
-                                            | e direcionar as questões de acessibilidade. As Diretrizes de acessibilidade de Conteúdo web 
-                                            | (WCAG) produzidas pelo WAI/W3C representam o primeiro e o principal esforço para estabelecer 
-                                            | normas para projetos acessíveis. Hoje, já existem outras normas que, geralmente, são baseadas 
-                                            | nas recomendações do W3C. São normas estabelecidas em alguns países como Estados Unidos, 
-                                            | Austrália, França, Alemanha, Canadá e Reino Unido, onde o respeito a padrões de acessibilidade 
-                                            | já é garantido por lei em determinados segmentos de sites web.
+                                        p Qual deles é o mais interessante? Nós precisamos fazer testes e ver o que de fato 
+                                            | o usuário usa. Se ele utilizar o Windows 7, por exemplo, teremos que encontrar 
+                                            | a melhor solução, testando as aplicações com este navegador. Da mesma forma, para 
+                                            | saber qual leitor de tela é o melhor ou mais utilizado, pode-se consultar o site 
+                                            a(href="https://webaim.org/" target="_blanck") WebAIM, 
+                                            | totalmente focado em acessibilidade web.
                                         
-                                        p Atualmente temos para o HTML5 o Wai-aria, para ajudar a deixar o código legível para o leitor de 
-                                            | tela. WAI-ARIA (Accessible Rich Internet Applications) define uma forma de tornar o conteúdo e 
-                                            | aplicativos web mais acessíveis a pessoas com deficiências. Ele contribui especialmente com
-                                            | conteúdo dinâmico e interface de controles de usuário avançadas desenvolvidos com Ajax, HTML, 
-                                            | JavaScript e tecnologias relacionadas. 
+                                        p Foi feita uma pesquisa em 2017, que indica qual leitor de tela é o mais utilizado, e o 
+                                            | JAWS, junto com o NVDA, têm juntos 78.5% do market share, enquanto o VoiceOver é 
+                                            | utilizado por 11.7%, pois é bem grande a quantidade de usuários de Mac. O JAWS, apesar 
+                                            | de ser o mais usado, tem decaído em uso conforme a passagem dos anos. 
                                         
-                                        p Além do wai-aria, é essencial que o código seja semântico, e sigas as normas da W3C para que o 
-                                            | leitor de tela consiga ler todo o conteúdo de forma clara, para o usuário, e que todas as 
-                                            | imagens e animações tenham alguma descrição textual também, para que seja legível pelo leitor 
-                                            | de tela.  
+                                        p A barreira do JAWS é que a licença para a sua instalação em português custa cerca de 
+                                            | R$8 mil, sendo um investimento alto para nós desenvolvedores testarmos em nossas 
+                                            | interfaces. No caso do VoiceOver - disponível no Mac -, não há custo adicional, assim 
+                                            | como o Narrador do Windows. Para desenvolver o web Reach, usei o NVDA, que aceita doações via 
+                                            | PayPal, porém, não é compatível com Mac.  
 
                     .row
                         .col-sm-12
@@ -54,9 +46,7 @@ block content
                                 .referencia
                                     ul
                                         li 
-                                            a(href="https://www.ces.uc.pt/lab2004/pdfs/GrazielaDelpizzo_MarcileneGhisi_SolangeSilva.pdf") Desenvolvimento de um site para pessoas cegas e com baixa visão: uma alternativa de educação inclusiva na universidade
-                                        li 
-                                            a(href="http://www.w3c.br/pub/Agenda/PalestraHtml5AriaEAcessibilidade/AcessibilidadeHtml5Aria-DigitalAcesso-2011.pdf") HTML5, wai-aria e acessibilidade                                  
+                                            a(href="https://webaim.org/projects/screenreadersurvey7/" target="_blanck") Screen Reader User Survey #7 Results
                                     
 
 

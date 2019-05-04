@@ -1149,7 +1149,7 @@ header .container {
   width: 30px;
   margin: auto;
 }
-#fechar-acessivel {
+.fechar-acessivel {
   cursor: pointer;
 }
 .colorheader {
@@ -1205,6 +1205,34 @@ body {
 }
 .hide {
   opacity: 0;
+}
+.segundo-foco {
+  bottom: 0;
+  left: 0;
+}
+.foco-leitura,
+.segundo-foco {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(154,153,153,0.8);
+}
+.foco-leitura {
+  top: 0;
+  left: 0;
+}
+.clicavel.ativo {
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.font-2x {
+  font-size: 20px;
+}
+.font-3x {
+  font-size: 21px;
+}
+.font-4x {
+  font-size: 22px;
 }
 @media screen and (max-width: 340px) {
   .background-leort {
@@ -1817,6 +1845,11 @@ body {
 }
 .referencia ul li a {
   color: #fff;
+  text-decoration: underline;
+}
+.item a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

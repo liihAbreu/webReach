@@ -1,0 +1,53 @@
+extends ./_layouts/layout-interno.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"+ version)
+    link(rel="stylesheet", href="css/style.css"+ version)
+    
+
+block content
+    div.clearfix(role="main" style="margin-top:80px;")
+        section(style="margin-top:40px;")
+            article
+                .container
+                    .row
+                        .col-sm-12
+                            .bg-interno
+                                h2.text-center.pd-20-bottom Wai-aria
+                                .conteudo
+                                    .item
+                                        p Os padrões de acessibilidade ajudam os projetistas e desenvolvedores de conteúdo 
+                                            | web a identificar e direcionar as questões de acessibilidade. As Diretrizes 
+                                            | de acessibilidade de Conteúdo web (WCAG) produzidas pelo WAI/W3C representam 
+                                            | o primeiro e o principal esforço para estabelecer normas para projetos 
+                                            | acessíveis. Hoje, já existem outras normas que, geralmente, são baseadas nas 
+                                            | recomendações do W3C. São normas estabelecidas em alguns países como Estados 
+                                            | Unidos, Austrália, França, Alemanha, Canadá e Reino Unido, onde o respeito a 
+                                            | padrões de acessibilidade já é garantido por lei em determinados segmentos de 
+                                            | sites web.
+                                        
+                                        p Atualmente temos para o HTML5 o Wai-aria, para ajudar a deixar o código legível para o leitor 
+                                            | de tela. WAI-ARIA (Accessible Rich Internet Applications) define uma forma de tornar o 
+                                            | conteúdo e aplicativos web mais acessíveis a pessoas com deficiências. Ele contribui 
+                                            | especialmente com conteúdo dinâmico e interface de controles de usuário avançadas 
+                                            | desenvolvidos com Ajax, HTML, JavaScript e tecnologias relacionadas.
+                                        
+                                        p Além do wai-aria, é essencial que o código seja semântico, e sigas as normas da W3C para que 
+                                            | o leitor de tela consiga ler todo o conteúdo de forma clara, para o usuário, e que todas 
+                                            | as imagens e animações tenham alguma descrição textual também, para que seja legível pelo 
+                                            | leitor de tela.  
+
+                    .row
+                        .col-sm-12
+                            .bg-interno
+                                h4.text-left.pd-20-bottom Referências
+                                .referencia
+                                    ul
+                                        li 
+                                            a(href="http://www.w3c.br/pub/Agenda/PalestraHtml5AriaEAcessibilidade/AcessibilidadeHtml5Aria-DigitalAcesso-2011.pdf" target="_blanck") HTML5, wai-aria e acessibilidade
+                                    
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js", type="text/javascript")

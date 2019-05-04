@@ -14,6 +14,8 @@ html(lang="pt")
             link(href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet")               
 
     body
+        .foco-leitura(style="display:none;")
+        .segundo-foco(style="display:none;")
 
         #loader
             img.loader-img.img-responsive(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif" + version, alt="Lodder")
@@ -69,28 +71,33 @@ html(lang="pt")
                                             a(href="http://localhost:3000/dislexos.html") Para  Dislexos
                                         li 
                                             a(href="http://localhost:3000/visao.html") Para Baixa Visão
-                                li 
-                                    a(class="link-topo",href="#agenda", class="goesTo") Leitores de Tela
+                                li.item-sub-menu 
+                                    a(class="link-topo",href="http://localhost:3000/leitor-tela.html", class="goesTo") Leitores de Tela
+                                    ul.sub-menu
+                                        li 
+                                            a(href="http://localhost:3000/df-visual.html") Deficiência VIsual
+                                        li 
+                                            a(href="http://localhost:3000/wai-aria.html") Wai-aria
                                 li 
                                     a(class="link-topo",href="#resultados", class="goesTo") Ferramentas acessivel
                                 li 
-                                    a(class="link-topo",href="#curso",  class="goesTo" )  Contato
+                                    a(class="link-topo",href="http://localhost:3000/contato.html",  class="goesTo" )  Contato
                         .acessibilidade
                             a.btn.bnt-acessibilidade( href="#" aria-label="Ferramentas acessiveis")
                             .btn-acessiveis(style="display:none;")
                                 ul
                                     li 
                                         a
-                                            img(src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
-                                    li
-                                        a(href="#")
-                                            img(src="img/maior.png", alt="Aumentar a fonte")
-                                    li
-                                        a(href="#")
-                                            img(src="img/menor.png", alt="Diminuir a fonte")
+                                            img.clicavel.ativo(id="foco" src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
                                     li
                                         a
-                                            img#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")   
+                                            img(id="fonte-maior" src="img/maior.png", alt="Aumentar a fonte")
+                                    li
+                                        a
+                                            img(id="fonte-menor" src="img/menor.png", alt="Diminuir a fonte")
+                                    li
+                                        a
+                                            img.fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")   
                         
                         // Navegação para mob
                         nav.visible-xs.visible-sm
@@ -110,18 +117,18 @@ html(lang="pt")
                     ul.lista-footer
                         li.bold Dicas para layout
                             ul.sub-lista
-                                li Autistas
-                                li Deficientes Auditivos
-                                li Dislexicos
-                                li Baixa Visão
-                                li PCD(Pessoas com Deficiências)
+                                li Para Autistas
+                                li Para Deficiêntes Auditivos
+                                li Para  Dislexos
+                                li Para Baixa Visão
 
                         li.bold Ferramentas acessíveis
 
                           li.bold Leitores de tela
                             ul.sub-lista
-                                li O que são Leitores de tela?
-                                li O que é o  Wai-aria?
+                                li Leitores de tela
+                                li Deficiência VIsual
+                                li Wai-aria
 
                 .col-md-5.col-sm-12.redes-sociais-footer
                     .icones-redes-sociais
@@ -137,3 +144,5 @@ html(lang="pt")
             script(src="https://code.jquery.com/jquery-2.2.4.min.js" + version)
             script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" + version, type="text/javascript")
             script(src="/js/app.js")
+            script(src="/js/barra-acessivel.js")
+            script(src="/js/acessibilidade.js")
