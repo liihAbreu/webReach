@@ -14,9 +14,11 @@ html(lang="pt")
             link(href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet")               
 
     body
+        .foco-leitura(style="display:none;")
+        .segundo-foco(style="display:none;")
 
         #loader
-            img.loader-img.img-responsive(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif" + version, alt="Lodder")
+            img.loader-img.img-responsive(src="img/loader.gif", alt="Carregando...")
         .ir-topo#ir-topo(style="display:none")
             a#ir-topos(href="#banners", class="goesTo link-topo" title="Voltar para o topo")
                 img(class="seta",src="img/seta.png", alt="voltar para o topo")
@@ -71,8 +73,13 @@ html(lang="pt")
                                             a(href="http://localhost:3000/df-visual.html") Deficiência VIsual
                                         li 
                                             a(href="http://localhost:3000/wai-aria.html") Wai-aria
-                                li 
+                                li.item-sub-menu 
                                     a(class="link-topo",href="#resultados", class="goesTo") Ferramentas acessivel
+                                    ul.sub-menu
+                                        li 
+                                            a(href="http://localhost:3000/foco.html") Botão de Foco
+                                        li 
+                                            a(href="http://localhost:3000/fonte.html") Aumentar/ Diminuir a fonte
                                 li 
                                     a(class="link-topo",href="http://localhost:3000/contato.html",  class="goesTo" )  Contato
                         .acessibilidade
@@ -80,17 +87,17 @@ html(lang="pt")
                             .btn-acessiveis(style="display:none;")
                                 ul
                                     li 
-                                        a
-                                            img(src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
-                                    li
-                                        a(href="#")
-                                            img(src="img/maior.png", alt="Aumentar a fonte")
-                                    li
-                                        a(href="#")
-                                            img(src="img/menor.png", alt="Diminuir a fonte")
+                                        a.clicavel.ativo
+                                            img(id="foco" src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
                                     li
                                         a
-                                            img#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")                   
+                                            img(id="maior" src="img/maior.png", alt="Aumentar a fonte")
+                                    li
+                                        a
+                                            img(id="menor" src="img/menor.png", alt="Diminuir a fonte")
+                                    li
+                                        a
+                                            img.fechar-acessivel#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")                   
 
 
 
@@ -109,8 +116,11 @@ html(lang="pt")
                                 li Para Baixa Visão
 
                         li.bold Ferramentas acessíveis
+                            ul.sub-lista
+                                li Botão de Foco
+                                li Aumentar/ Diminuir a fonte                        
 
-                          li.bold Leitores de tela
+                        li.bold Leitores de tela
                             ul.sub-lista
                                 li Leitores de tela?
                                 li Deficiência VIsual
@@ -130,3 +140,5 @@ html(lang="pt")
             script(src="https://code.jquery.com/jquery-2.2.4.min.js" + version)
             script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" + version, type="text/javascript")
             script(src="/js/app.js")
+            script(src="/js/barra-acessivel.js")
+            script(src="/js/acessibilidade.js")

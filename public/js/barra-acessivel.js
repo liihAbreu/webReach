@@ -1,11 +1,10 @@
 (function($){
-    $('#fonte-maior').click(function(){
-        $('body').addClass('font-2x');
-        console.log('ok');
-        
+    $('#maior').click(function(){
+       $('body').addClass('font-2x'); 
     });
-    
-    $('#fonte-menor').click(function(){
-        $('body').removeClass('font-2x');
-    });   
+
+    $('#menor').click(function(){
+        $('body').removeClass('font-2x'); 
+     });
+       
 })($)

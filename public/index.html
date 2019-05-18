@@ -31,10 +31,10 @@
   <body>
     <div class="foco-leitura" style="display:none;"></div>
     <div class="segundo-foco" style="display:none;"></div>
-    <div id="loader"><img class="loader-img img-responsive" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif?v=1.0.0" alt="Lodder"></div>
+    <div id="loader"><img class="loader-img img-responsive" src="img/loader.gif?v=1.0.0" alt="Lodder"></div>
     <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
-    <div class="container-fluid banners" id="banners" aria-disabled="true">
-      <div id="banner">
+    <div class="container-fluid banners" id="banners">
+      <div id="banner" aria-disabled="true">
         <div class="row">
           <div class="benner-full">
             <div class="filtro"></div>
@@ -64,7 +64,7 @@
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
     <!-- Header navegação-->
-    <header id="topo" role="menubar">
+    <header id="topo" role="menubar" tabindex="0">
       <div class="container-fluid" id="cabeca">
         <div class="row center-vertical">
           <div class="col-sm-12 text-center">
@@ -85,7 +85,12 @@
                     <li> <a href="http://localhost:3000/wai-aria.html">Wai-aria</a></li>
                   </ul>
                 </li>
-                <li> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a></li>
+                <li class="item-sub-menu"> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a>
+                  <ul class="sub-menu">
+                    <li> <a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
+                    <li> <a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
+                  </ul>
+                </li>
                 <li> <a class="link-topo goesTo" href="http://localhost:3000/contato.html"> Contato</a></li>
               </ul>
             </nav>
@@ -93,9 +98,9 @@
               <div class="btn-acessiveis" style="display:none;">
                 <ul>
                   <li> <a><img class="clicavel ativo" id="foco" src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
-                  <li><a><img id="fonte-maior" src="img/maior.png" alt="Aumentar a fonte"></a></li>
-                  <li><a><img id="fonte-menor" src="img/menor.png" alt="Diminuir a fonte"></a></li>
-                  <li><a><img class="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
+                  <li><a><img id="maior" src="img/maior.png" alt="Aumentar a fonte"></a></li>
+                  <li><a><img id="menor" src="img/menor.png" alt="Diminuir a fonte"></a></li>
+                  <li><a><img class="fechar-acessivel" id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
                 </ul>
               </div>
             </div>
@@ -157,13 +162,17 @@
             </ul>
           </li>
           <li class="bold">Ferramentas acessíveis
-            <li class="bold">Leitores de tela
-              <ul class="sub-lista">
-                <li>Leitores de tela</li>
-                <li>Deficiência VIsual</li>
-                <li>Wai-aria</li>
-              </ul>
-            </li>
+            <ul class="sub-lista">
+              <li>Botão de Foco</li>
+              <li>Aumentar/ Diminuir a fonte</li>
+            </ul>
+          </li>
+          <li class="bold">Leitores de tela
+            <ul class="sub-lista">
+              <li>Leitores de tela</li>
+              <li>Deficiência VIsual</li>
+              <li>Wai-aria</li>
+            </ul>
           </li>
         </ul>
       </div>

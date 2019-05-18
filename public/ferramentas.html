@@ -29,9 +29,7 @@
     <link rel="stylesheet" href="css/style.css?v=1.0.0">
   </head>
   <body>
-    <div class="foco-leitura" style="display:none;"></div>
-    <div class="segundo-foco" style="display:none;"></div>
-    <div id="loader"><img class="loader-img img-responsive" src="img/loader.gif" alt="Carregando..."></div>
+    <div id="loader"><img class="loader-img img-responsive" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif?v=1.0.0" alt="Lodder"></div>
     <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
     <!-- menu-nobile-->
     <div class="menu-mob-flutuante img-back-leort" id="menu-mob-flutuante" style="display:none;">
@@ -70,22 +68,17 @@
                     <li> <a href="http://localhost:3000/wai-aria.html">Wai-aria</a></li>
                   </ul>
                 </li>
-                <li class="item-sub-menu"> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a>
-                  <ul class="sub-menu">
-                    <li> <a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
-                    <li> <a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
-                  </ul>
-                </li>
+                <li> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a></li>
                 <li> <a class="link-topo goesTo" href="http://localhost:3000/contato.html"> Contato</a></li>
               </ul>
             </nav>
             <div class="acessibilidade"><a class="btn bnt-acessibilidade" href="#" aria-label="Ferramentas acessiveis"></a>
               <div class="btn-acessiveis" style="display:none;">
                 <ul>
-                  <li> <a class="clicavel ativo"><img id="foco" src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
-                  <li><a><img id="maior" src="img/maior.png" alt="Aumentar a fonte"></a></li>
-                  <li><a><img id="menor" src="img/menor.png" alt="Diminuir a fonte"></a></li>
-                  <li><a><img class="fechar-acessivel" id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
+                  <li> <a><img src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
+                  <li><a href="#"><img src="img/maior.png" alt="Aumentar a fonte"></a></li>
+                  <li><a href="#"><img src="img/menor.png" alt="Diminuir a fonte"></a></li>
+                  <li><a><img id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
                 </ul>
               </div>
             </div>
@@ -100,58 +93,20 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="bg-interno">
-                  <h2 class="text-center pd-20-bottom">Baixa Visão e Deficiente Visual</h2>
+                  <h2 class="text-center pd-20-bottom">Ferramentas Acessíveis</h2>
                   <div class="conteudo">
                     <div class="item">
-                      <h4 class="text-left">O que é:</h4>
                       <p>
-                        As causas mais freqüentes de cegueira e visão subnormal são: Retinopatia da prematuridade causada pela imaturidade da retina, em decorrência de parto 
-                        prematuro ou de excesso de oxigênio na incubadora. Catarata congênita em 
-                        conseqüência de rubéola ou de outras infecções na gestação. Glaucoma congênito 
-                        que pode ser hereditário ou causado por infecções. Atrofia óptica. Degenerações 
-                        retinianas e alterações visuais corticais. A cegueira e a visão subnormal podem 
-                        também resultar de doenças como diabetes, descolamento de retina ou traumatismos 
-                        oculares. (GIL, 2000, p. 12).
-                      </p>
+                        Nesse site utileizei duas ferramentas bem simples de fazer e que já ajudam muito aqueles que possuembaixa visão ou qualquer outra dificuldade para leitura.</p>
                       <p>
-                        Segundo Sá, Campos e Silva (2007) destacam, é complexo definir baixa visão devido às diversas manifestações e à intensidade de comprometimentos das funções visuais que acarretam. Pois 
-                        os comprometimentos das funções visuais trazidos pela baixa visão englobam desde a 
-                        dificuldade de percepção de luz até a redução da acuidade e do campo visual, as quais 
-                        interferem ou limitam a execução de tarefas e o desempenho geral das pessoas com baixa visão.
-                      </p>
+                        A primeira é o botão que cria um efeito de "foco", apagando um pouco os elementos do fundo para que o usuário possa se concentrar melhor no texto.<img class="img-responsive center-block" src="img/exemplo-foco.png" alt="A imagem exemplifica a ferramenta que faz um efeito de foco no texto"></p>
+                      <p>Segue abaixo o codigo de JS e de Css para fazer o botão:</p><img src="img/div.png" alt="Imagem mostra um pedaço do código como exemplo">
                       <p>
-                        Nesse contexto, a cegueira é definida como uma alteração parcial ou total que acomete a capacidade de “[...] perceber cor, tamanho, distância, forma, posição ou movimento.” (SÁ, CAMPOS e SILVA, 
-                        2007, p.15). A cegueira parcial engloba os casos em que, por exemplo, ainda há a capacidade dos 
-                        indivíduos em enxergar e contar dedos a pouca distância, assim como de visualizar vultos. 
-                        Portanto a cegueira total pressupõe completa perda de visão. A visão é totalmente nula, ou seja, 
-                        nem a percepção luminosa está presente.
-                      </p>
+                        Primeiro faça as duas div's no body, essas duas Div's vão ser o fundo "colorido", e a parti da posição delasque você calcular o espaço para o foco do texto.</p><img src="img/botoes.png" alt="Imagem mostra um pedaço do código como exemplo">
+                      <p>Depois crie o botao de foco, nesse exemplos temos todos os botões que foi utilizado no site.</p><img src="img/js1.png" alt="Imagem mostra um pedaço do código como exemplo">
+                      <p>Aqui ativamos e desativamos as div's.</p><img src="img/js2.png" alt="Imagem mostra um pedaço do código como exemplo">
+                      <p>Aqui pegamos a posição do mouse e calculamos a posição das Div's.</p>
                     </div>
-                    <div class="item">
-                      <h3 class="text-center">Como fazer o layout respeitando as necessidades de pessoas com baixa visão:</h3>
-                      <h4 class="pd-40-top text-left">Ter um bom contraste entre a fonte e o fundo </h4>
-                      <p>
-                        e uma fonte de tamanho razoável, no mínimo 14px, deixar as informações com fácil acesso aos usuários, bem claras.</p>
-                      <p>
-                        Chama-se visão subnormal (ou baixa visão, como preferem alguns especialistas) à alteração da capacidade funcional decorrente de fatores como rebaixamento significativo da acuidade 
-                        visual, redução importante do campo visual e da sensibilidade aos contrastes e limitação 
-                        de outras capacidades. Uma definição simples de visão subnormal é a incapacidade de 
-                        enxergar com clareza suficiente para contar os dedos da mão a uma distância de 3 metros, à 
-                        luz do dia; em outras palavras, trata-se de uma pessoa que conserva resíduos de visão.  
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="bg-interno">
-                  <h4 class="text-left pd-20-bottom">Referências</h4>
-                  <div class="referencia">
-                    <ul>
-                      <li> <a href="http://cietenped.ufscar.br/submissao/index.php/2018/article/view/538/67">Acessibilidade digital no ambiete virtual de aprendizagem: recursos e ferramentas</a></li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -172,17 +127,13 @@
             </ul>
           </li>
           <li class="bold">Ferramentas acessíveis
-            <ul class="sub-lista">
-              <li>Botão de Foco</li>
-              <li>Aumentar/ Diminuir a fonte                        </li>
-            </ul>
-          </li>
-          <li class="bold">Leitores de tela
-            <ul class="sub-lista">
-              <li>Leitores de tela?</li>
-              <li>Deficiência VIsual</li>
-              <li>Wai-aria</li>
-            </ul>
+            <li class="bold">Leitores de tela
+              <ul class="sub-lista">
+                <li>Leitores de tela?</li>
+                <li>Deficiência VIsual</li>
+                <li>Wai-aria</li>
+              </ul>
+            </li>
           </li>
         </ul>
       </div>
@@ -196,8 +147,6 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js?v=1.0.0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?v=1.0.0" type="text/javascript"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/barra-acessivel.js"></script>
-    <script src="/js/acessibilidade.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" type="text/javascript"></script>
   </body>
 </html>

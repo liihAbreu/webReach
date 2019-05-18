@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="css/style.css?v=1.0.0">
   </head>
   <body>
-    <div id="loader"><img class="loader-img img-responsive" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/striort/loader.gif?v=1.0.0" alt="Lodder"></div>
+    <div class="foco-leitura" style="display:none;"></div>
+    <div class="segundo-foco" style="display:none;"></div>
+    <div id="loader"><img class="loader-img img-responsive" src="img/loader.gif" alt="Carregando..."></div>
     <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
     <!-- menu-nobile-->
     <div class="menu-mob-flutuante img-back-leort" id="menu-mob-flutuante" style="display:none;">
@@ -68,17 +70,22 @@
                     <li> <a href="http://localhost:3000/wai-aria.html">Wai-aria</a></li>
                   </ul>
                 </li>
-                <li> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a></li>
+                <li class="item-sub-menu"> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a>
+                  <ul class="sub-menu">
+                    <li> <a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
+                    <li> <a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
+                  </ul>
+                </li>
                 <li> <a class="link-topo goesTo" href="http://localhost:3000/contato.html"> Contato</a></li>
               </ul>
             </nav>
             <div class="acessibilidade"><a class="btn bnt-acessibilidade" href="#" aria-label="Ferramentas acessiveis"></a>
               <div class="btn-acessiveis" style="display:none;">
                 <ul>
-                  <li> <a><img src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
-                  <li><a href="#"><img src="img/maior.png" alt="Aumentar a fonte"></a></li>
-                  <li><a href="#"><img src="img/menor.png" alt="Diminuir a fonte"></a></li>
-                  <li><a><img id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
+                  <li> <a class="clicavel ativo"><img id="foco" src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
+                  <li><a><img id="maior" src="img/maior.png" alt="Aumentar a fonte"></a></li>
+                  <li><a><img id="menor" src="img/menor.png" alt="Diminuir a fonte"></a></li>
+                  <li><a><img class="fechar-acessivel" id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
                 </ul>
               </div>
             </div>
@@ -178,13 +185,17 @@
             </ul>
           </li>
           <li class="bold">Ferramentas acessíveis
-            <li class="bold">Leitores de tela
-              <ul class="sub-lista">
-                <li>Leitores de tela?</li>
-                <li>Deficiência VIsual</li>
-                <li>Wai-aria</li>
-              </ul>
-            </li>
+            <ul class="sub-lista">
+              <li>Botão de Foco</li>
+              <li>Aumentar/ Diminuir a fonte                        </li>
+            </ul>
+          </li>
+          <li class="bold">Leitores de tela
+            <ul class="sub-lista">
+              <li>Leitores de tela?</li>
+              <li>Deficiência VIsual</li>
+              <li>Wai-aria</li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -198,6 +209,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js?v=1.0.0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?v=1.0.0" type="text/javascript"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/barra-acessivel.js"></script>
+    <script src="/js/acessibilidade.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" type="text/javascript"></script>
   </body>
 </html>

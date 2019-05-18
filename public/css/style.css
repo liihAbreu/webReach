@@ -1115,6 +1115,9 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
 }
+.acessibilidade > * {
+  cursor: pointer;
+}
 .bnt-acessibilidade {
   background-color: #fff;
   background-image: url("/img/acessibilidade.png");
@@ -1225,8 +1228,32 @@ body {
   border: 1px solid transparent;
   border-radius: 50%;
 }
-.font-2x {
+.font-2x h1 {
   font-size: 50px;
+}
+.font-2x h2 {
+  font-size: 40px;
+}
+.font-2x h3 {
+  font-size: 35px;
+}
+.font-2x h4 {
+  font-size: 30px;
+}
+.font-2x h5 {
+  font-size: 25px;
+}
+.font-2x h6 {
+  font-size: 22px;
+}
+.font-2x p {
+  font-size: 22px;
+}
+.font-2x ul li {
+  font-size: 22px;
+}
+.font-2x ol li {
+  font-size: 22px;
 }
 @media screen and (max-width: 340px) {
   .background-leort {
@@ -1697,14 +1724,15 @@ body {
   height: 100%;
   z-index: 99999999;
   position: fixed;
-  background-color: 'black';
+  background-color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: 0;
 }
 #loader .loader-img {
-  width: 72px;
-  height: 72px;
+  width: 150px;
+  height: 150px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
