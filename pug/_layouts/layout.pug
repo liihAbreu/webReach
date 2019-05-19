@@ -58,9 +58,9 @@ html(lang="pt")
                 .row.center-vertical
                     .col-sm-12.text-center
                         // Navegação para desk
-                        nav.visible-md.visible-lg
+                        nav.visible-md.visible-lg.focus
                             ul.display-menu
-                                li.item-sub-menu 
+                                li.item-sub-menu
                                     a(class="link-topo",href="http://localhost:3000/dicas-layouts.html", class="goesTo") Dicas para Layout
                                     ul.sub-menu
                                         li 
@@ -87,10 +87,10 @@ html(lang="pt")
                                             a(href="http://localhost:3000/fonte.html") Aumentar/ Diminuir a fonte
                                 li 
                                     a(class="link-topo",href="http://localhost:3000/contato.html",  class="goesTo" )  Contato
-                        .acessibilidade
+                        .acessibilidade(aria-desabled="true")
                             a.btn.bnt-acessibilidade( href="#" aria-label="Ferramentas acessiveis")
                             .btn-acessiveis(style="display:none;")
-                                ul
+                                ul(aria-desabled="true")
                                     li 
                                         a
                                             img.clicavel.ativo(id="foco" src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
