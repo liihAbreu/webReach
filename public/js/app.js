@@ -39,7 +39,7 @@
 
         let btn = $('#ir-topo');
         let posY = e.currentTarget.scrollY
-        if(posY > 800){
+        if(posY > 600){
             $(btn).fadeIn(200);
         }
         else{

@@ -19,18 +19,32 @@ html(lang="pt")
 
         #loader
             img.loader-img.img-responsive(src="img/loader.gif", alt="Carregando...")
-        .ir-topo#ir-topo(style="display:none")
-            a#ir-topos(href="#banners", class="goesTo link-topo" title="Voltar para o topo")
-                img(class="seta",src="img/seta.png", alt="voltar para o topo")
+
         // menu-nobile
         .menu-mob-flutuante#menu-mob-flutuante.img-back-leort(style="display:none;")
             ul.display-menu-mob
                 li 
-                    a(class="link-topo",href="#inscricao", class="goesTo") Dicas para Layout
+                    a(class="link-topo",href="http://localhost:3000/dicas-layouts.html", class="goesTo") Dicas para Layout
                 li 
-                    a(class="link-topo",href="#agenda", class="goesTo") Leitores de Tela
+                    a(href="http://localhost:3000/autistas.html") Para Autistas
                 li 
+                    a(href="http://localhost:3000/audicao.html") Para Deficiêntes Auditivos
+                li 
+                    a(href="http://localhost:3000/dislexos.html") Para  Dislexos
+                li 
+                    a(href="http://localhost:3000/visao.html") Para Baixa Visão
+                li
+                    a(class="link-topo",href="http://localhost:3000/leitor-tela.html", class="goesTo") Leitores de Tela
+                li 
+                    a(href="http://localhost:3000/df-visual.html") Deficiência VIsual
+                li 
+                    a(href="http://localhost:3000/wai-aria.html") Wai-aria
+                li
                     a(class="link-topo",href="#resultados", class="goesTo") Ferramentas acessivel
+                li 
+                    a(href="http://localhost:3000/foco.html") Botão de Foco
+                li 
+                    a(href="http://localhost:3000/fonte.html") Aumentar/ Diminuir a fonte
                 li 
                     a(class="link-topo goesTo",href="#curso", class="goesTo" ) Contato
 
@@ -82,8 +96,8 @@ html(lang="pt")
                                             a(href="http://localhost:3000/fonte.html") Aumentar/ Diminuir a fonte
                                 li 
                                     a(class="link-topo",href="http://localhost:3000/contato.html",  class="goesTo" )  Contato
-                        .acessibilidade
-                            a.btn.bnt-acessibilidade( href="#" aria-label="Ferramentas acessiveis")
+                        .acessibilidade(aria-disabled='true')
+                            a.btn.bnt-acessibilidade(aria-disabled='true')
                             .btn-acessiveis(style="display:none;")
                                 ul
                                     li 
@@ -134,6 +148,9 @@ html(lang="pt")
                             img(src="img/youtube.svg", alt="Ir para o Youtube da WebReach")
                     .empresa
                         p Copyright© 2019, Web Reach
+            .ir-topo#ir-topo(style="display:none")
+                a#ir-topos(href="#banners", class="goesTo link-topo" title="Voltar para o topo")
+                    img(class="seta",src="img/seta.png", alt="voltar para o topo")
 
 
         block scriptsJS

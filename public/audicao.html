@@ -32,13 +32,20 @@
     <div class="foco-leitura" style="display:none;"></div>
     <div class="segundo-foco" style="display:none;"></div>
     <div id="loader"><img class="loader-img img-responsive" src="img/loader.gif" alt="Carregando..."></div>
-    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
     <!-- menu-nobile-->
     <div class="menu-mob-flutuante img-back-leort" id="menu-mob-flutuante" style="display:none;">
       <ul class="display-menu-mob">
-        <li> <a class="link-topo goesTo" href="#inscricao">Dicas para Layout</a></li>
-        <li> <a class="link-topo goesTo" href="#agenda">Leitores de Tela</a></li>
-        <li> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a></li>
+        <li> <a class="link-topo goesTo" href="http://localhost:3000/dicas-layouts.html">Dicas para Layout</a></li>
+        <li> <a href="http://localhost:3000/autistas.html">Para Autistas</a></li>
+        <li> <a href="http://localhost:3000/audicao.html">Para Deficiêntes Auditivos</a></li>
+        <li> <a href="http://localhost:3000/dislexos.html">Para  Dislexos</a></li>
+        <li> <a href="http://localhost:3000/visao.html">Para Baixa Visão</a></li>
+        <li><a class="link-topo goesTo" href="http://localhost:3000/leitor-tela.html">Leitores de Tela</a></li>
+        <li> <a href="http://localhost:3000/df-visual.html">Deficiência VIsual</a></li>
+        <li> <a href="http://localhost:3000/wai-aria.html">Wai-aria</a></li>
+        <li><a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a></li>
+        <li> <a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
+        <li> <a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
         <li> <a class="link-topo goesTo goesTo" href="#curso">Contato</a></li>
       </ul>
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
@@ -79,7 +86,7 @@
                 <li> <a class="link-topo goesTo" href="http://localhost:3000/contato.html"> Contato</a></li>
               </ul>
             </nav>
-            <div class="acessibilidade"><a class="btn bnt-acessibilidade" href="#" aria-label="Ferramentas acessiveis"></a>
+            <div class="acessibilidade" aria-disabled="true"><a class="btn bnt-acessibilidade" aria-disabled="true"></a>
               <div class="btn-acessiveis" style="display:none;">
                 <ul>
                   <li> <a class="clicavel ativo"><img id="foco" src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
@@ -206,6 +213,7 @@
         </div>
       </div>
     </footer>
+    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js?v=1.0.0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?v=1.0.0" type="text/javascript"></script>
     <script src="/js/app.js"></script>
