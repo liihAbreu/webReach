@@ -1598,6 +1598,7 @@ body {
 }
 .item-sub-menu {
   position: relative;
+  overflow: hidden;
 }
 .item-sub-menu .sub-menu {
   text-align: left;
@@ -1608,9 +1609,12 @@ body {
   padding: 10px;
   border: 1px solid #4b0f12;
   opacity: 0;
-  -webkit-transform: translate(0, -138%);
-          transform: translate(0, -138%);
-  transition: 2s;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  transition: 1s;
+}
+.item-sub-menu:hover {
+  overflow: visible;
 }
 .item-sub-menu:hover .sub-menu {
   -webkit-transform: translate(0, 0);

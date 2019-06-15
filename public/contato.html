@@ -31,65 +31,68 @@
   <body>
     <div class="foco-leitura" style="display:none;"></div>
     <div class="segundo-foco" style="display:none;"></div>
-    <div id="loader"><img class="loader-img img-responsive" src="img/loader.gif" alt="Carregando..."></div>
+    <!--#loader
+    img.loader-img.img-responsive(src="img/loader.gif", alt="Carregando...")
+    
+    -->
     <!-- menu-nobile-->
     <div class="menu-mob-flutuante img-back-leort" id="menu-mob-flutuante" style="display:none;">
       <ul class="display-menu-mob">
-        <li> <a class="link-topo goesTo" href="http://localhost:3000/dicas-layouts.html">Dicas para Layout</a></li>
-        <li> <a href="http://localhost:3000/autistas.html">Para Autistas</a></li>
-        <li> <a href="http://localhost:3000/audicao.html">Para Deficiêntes Auditivos</a></li>
-        <li> <a href="http://localhost:3000/dislexos.html">Para  Dislexos</a></li>
-        <li> <a href="http://localhost:3000/visao.html">Para Baixa Visão</a></li>
+        <li><a class="link-topo goesTo" href="http://localhost:3000/dicas-layouts.html">Dicas para Layout</a></li>
+        <li><a href="http://localhost:3000/autistas.html">Para Autistas</a></li>
+        <li><a href="http://localhost:3000/audicao.html">Para Deficiêntes Auditivos</a></li>
+        <li><a href="http://localhost:3000/dislexos.html">Para  Dislexos</a></li>
+        <li><a href="http://localhost:3000/visao.html">Para Baixa Visão</a></li>
         <li><a class="link-topo goesTo" href="http://localhost:3000/leitor-tela.html">Leitores de Tela</a></li>
-        <li> <a href="http://localhost:3000/df-visual.html">Deficiência VIsual</a></li>
-        <li> <a href="http://localhost:3000/wai-aria.html">Wai-aria</a></li>
-        <li><a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a></li>
-        <li> <a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
-        <li> <a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
-        <li> <a class="link-topo goesTo goesTo" href="#curso">Contato</a></li>
+        <li><a href="http://localhost:3000/df-visual.html">Deficiência VIsual</a></li>
+        <li><a href="http://localhost:3000/wai-aria.html">WAI-ARIA</a></li>
+        <li><a class="link-topo goesTo" href="#resultados">Ferramentas Acessíveis</a></li>
+        <li><a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
+        <li><a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
+        <li><a class="link-topo goesTo goesTo" href="#curso">Contato</a></li>
       </ul>
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
     <!-- Header navegação-->
     <header class="header-interno" id="topo" role="menubar">
       <div class="container-fluid" id="cabeca">
-        <div class="row center-vertical"> 
+        <div class="row center-vertical">
           <!-- Navegação para mob-->
           <nav class="visible-xs visible-sm">
-            <div class="menu-mob"><span class="icon-bar"></span><span class="icon-bar"> </span><span class="icon-bar"></span></div>
+            <div class="menu-mob"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
           </nav>
           <div class="col-sm-12 text-center menu-interno">
             <div class="logo-interno"><a href="http://localhost:3000"><img class="img-responsive center-block" src="img/logo-webReach.png" alt="home"></a></div>
             <!-- Navegação para desk-->
             <nav class="visible-md visible-lg focus">
               <ul class="display-menu">
-                <li class="item-sub-menu"> <a class="link-topo goesTo" href="http://localhost:3000/dicas-layouts.html">Dicas para Layout</a>
+                <li class="item-sub-menu"><a class="link-topo goesTo" href="http://localhost:3000/dicas-layouts.html">Dicas para Layout</a>
                   <ul class="sub-menu">
-                    <li> <a href="http://localhost:3000/autistas.html">Para Autistas</a></li>
-                    <li> <a href="http://localhost:3000/audicao.html">Para Deficiêntes Auditivos</a></li>
-                    <li> <a href="http://localhost:3000/dislexos.html">Para Dislexos</a></li>
-                    <li> <a href="http://localhost:3000/visao.html">Para Baixa Visão</a></li>
+                    <li><a href="http://localhost:3000/autistas.html">Para Autistas</a></li>
+                    <li><a href="http://localhost:3000/audicao.html">Para Deficiêntes Auditivos</a></li>
+                    <li><a href="http://localhost:3000/dislexos.html">Para Dislexos</a></li>
+                    <li><a href="http://localhost:3000/visao.html">Para Baixa Visão</a></li>
                   </ul>
                 </li>
-                <li class="item-sub-menu"> <a class="link-topo goesTo" href="http://localhost:3000/leitor-tela.html">Leitores de Tela</a>
+                <li class="item-sub-menu"><a class="link-topo goesTo" href="http://localhost:3000/leitor-tela.html">Leitores de Tela</a>
                   <ul class="sub-menu">
-                    <li> <a href="http://localhost:3000/df-visual.html">Deficiência VIsual</a></li>
-                    <li> <a href="http://localhost:3000/wai-aria.html">Wai-aria</a></li>
+                    <li><a href="http://localhost:3000/df-visual.html">Deficiência Visual</a></li>
+                    <li><a href="http://localhost:3000/wai-aria.html">WAI-ARIA</a></li>
                   </ul>
                 </li>
-                <li class="item-sub-menu"> <a class="link-topo goesTo" href="#resultados">Ferramentas acessivel</a>
+                <li class="item-sub-menu"><a class="link-topo goesTo" href="#resultados">Ferramentas Acessíveis</a>
                   <ul class="sub-menu">
-                    <li> <a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
-                    <li> <a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
+                    <li><a href="http://localhost:3000/foco.html">Botão de Foco</a></li>
+                    <li><a href="http://localhost:3000/fonte.html">Aumentar/ Diminuir a fonte</a></li>
                   </ul>
                 </li>
-                <li> <a class="link-topo goesTo" href="http://localhost:3000/contato.html"> Contato</a></li>
+                <li><a class="link-topo goesTo" href="http://localhost:3000/contato.html"> Contato</a></li>
               </ul>
             </nav>
             <div class="acessibilidade" aria-disabled="true"><a class="btn bnt-acessibilidade" aria-disabled="true"></a>
               <div class="btn-acessiveis" style="display:none;">
                 <ul>
-                  <li> <a class="clicavel ativo"><img id="foco" src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
+                  <li><a class="clicavel ativo"><img id="foco" src="img/foco.png" alt="Ferramenta para ajudar na leitura do texto"></a></li>
                   <li><a><img id="maior" src="img/maior.png" alt="Aumentar a fonte"></a></li>
                   <li><a><img id="menor" src="img/menor.png" alt="Diminuir a fonte"></a></li>
                   <li><a><img class="fechar-acessivel" id="fechar-acessivel" src="img/fechar.png" alt="Fechar ferramentas acessiveis"></a></li>
@@ -136,7 +139,7 @@
           <li class="bold">Ferramentas acessíveis
             <ul class="sub-lista">
               <li>Botão de Foco</li>
-              <li>Aumentar/ Diminuir a fonte                        </li>
+              <li>Aumentar/ Diminuir a fonte</li>
             </ul>
           </li>
           <li class="bold">Leitores de tela
@@ -155,7 +158,7 @@
         </div>
       </div>
     </footer>
-    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
+    <div class="ir-topo" id="ir-topo" style="display:none"><a class="goesTo link-topo" id="ir-topos" href="#banners" title="Voltar para o topo"><img class="seta" src="img/seta.png" alt="voltar para o topo"></a></div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js?v=1.0.0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?v=1.0.0" type="text/javascript"></script>
     <script src="/js/app.js"></script>

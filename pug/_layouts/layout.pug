@@ -10,8 +10,8 @@ html(lang="pt")
         block CSS
             link(rel="stylesheet", href="css/plugins.css")
             link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" +  version )
-            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.min.css" +  version  )  
-            link(href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet")               
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.min.css" +  version  )
+            link(href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet")
 
     body
         .foco-leitura(style="display:none;")
@@ -37,29 +37,29 @@ html(lang="pt")
         // menu-nobile
         .menu-mob-flutuante#menu-mob-flutuante.img-back-leort(style="display:none;")
             ul.display-menu-mob
-                li 
+                li
                     a(class="link-topo",href="http://localhost:3000/dicas-layouts.html", class="goesTo") Dicas para Layout
-                li 
+                li
                     a(href="http://localhost:3000/autistas.html") Para Autistas
-                li 
+                li
                     a(href="http://localhost:3000/audicao.html") Para Deficiêntes Auditivos
-                li 
+                li
                     a(href="http://localhost:3000/dislexos.html") Para  Dislexos
-                li 
+                li
                     a(href="http://localhost:3000/visao.html") Para Baixa Visão
                 li
                     a(class="link-topo",href="http://localhost:3000/leitor-tela.html", class="goesTo") Leitores de Tela
-                li 
-                    a(href="http://localhost:3000/df-visual.html") Deficiência VIsual
-                li 
-                    a(href="http://localhost:3000/wai-aria.html") Wai-aria
                 li
-                    a(class="link-topo",href="#resultados", class="goesTo") Ferramentas acessivel
-                li 
+                    a(href="http://localhost:3000/df-visual.html") Deficiência Visual
+                li
+                    a(href="http://localhost:3000/wai-aria.html") WWAI-ARIA
+                li
+                    a(class="link-topo",href="#resultados", class="goesTo") Ferramentas Acessíveis
+                li
                     a(href="http://localhost:3000/foco.html") Botão de Foco
-                li 
+                li
                     a(href="http://localhost:3000/fonte.html") Aumentar/ Diminuir a fonte
-                li 
+                li
                     a(class="link-topo goesTo",href="#curso", class="goesTo" ) Contato
 
             .fechar-menu
@@ -76,35 +76,35 @@ html(lang="pt")
                                 li.item-sub-menu
                                     a(class="link-topo",href="http://localhost:3000/dicas-layouts.html", class="goesTo") Dicas para Layout
                                     ul.sub-menu
-                                        li 
+                                        li
                                             a(href="http://localhost:3000/autistas.html") Para Autistas
-                                        li 
+                                        li
                                             a(href="http://localhost:3000/audicao.html") Para Deficiêntes Auditivos
-                                        li 
+                                        li
                                             a(href="http://localhost:3000/dislexos.html") Para  Dislexos
-                                        li 
+                                        li
                                             a(href="http://localhost:3000/visao.html") Para Baixa Visão
-                                li.item-sub-menu 
+                                li.item-sub-menu
                                     a(class="link-topo",href="http://localhost:3000/leitor-tela.html", class="goesTo") Leitores de Tela
                                     ul.sub-menu
-                                        li 
-                                            a(href="http://localhost:3000/df-visual.html") Deficiência VIsual
-                                        li 
-                                            a(href="http://localhost:3000/wai-aria.html") Wai-aria
-                                li.item-sub-menu  
-                                    a(class="link-topo",href="#resultados", class="goesTo") Ferramentas acessivel
+                                        li
+                                            a(href="http://localhost:3000/df-visual.html") Deficiência Visual
+                                        li
+                                            a(href="http://localhost:3000/wai-aria.html") WAI-ARIA
+                                li.item-sub-menu
+                                    a(class="link-topo",href="#resultados", class="goesTo") Ferramentas Acessíveis
                                     ul.sub-menu
-                                        li 
+                                        li
                                             a(href="http://localhost:3000/foco.html") Botão de Foco
-                                        li 
+                                        li
                                             a(href="http://localhost:3000/fonte.html") Aumentar/ Diminuir a fonte
-                                li 
+                                li
                                     a(class="link-topo",href="http://localhost:3000/contato.html",  class="goesTo" )  Contato
                         .acessibilidade(aria-disabled='true')
                             a.btn.bnt-acessibilidade(aria-disabled='true')
                             .btn-acessiveis(style="display:none;")
                                 ul
-                                    li 
+                                    li
                                         a
                                             img.clicavel.ativo(id="foco" src="img/foco.png", alt="Ferramenta para ajudar na leitura do texto")
                                     li
@@ -115,21 +115,21 @@ html(lang="pt")
                                             img(id="menor" src="img/menor.png", alt="Diminuir a fonte")
                                     li
                                         a
-                                            img.fechar-acessivel#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")   
-                        
+                                            img.fechar-acessivel#fechar-acessivel(src="img/fechar.png", alt="Fechar ferramentas acessiveis")
+
                         // Navegação para mob
                         nav.visible-xs.visible-sm
                                 .menu-mob
                                     span.icon-bar
-                                    span.icon-bar  
-                                    span.icon-bar                   
+                                    span.icon-bar
+                                    span.icon-bar
 
 
 
         block content
 
 
-        block footer   
+        block footer
             footer.footer.clearfix(aria-labelledby="Rodapé")
                 .col-md-7.col-sm-12.menu-footer
                     ul.lista-footer

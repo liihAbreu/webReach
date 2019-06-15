@@ -3,7 +3,7 @@
     right 10px
     top 10px
     cursor pointer
-    img 
+    img
         max-width 30px
 .menu-mob-flutuante
     display flex
@@ -59,7 +59,7 @@
                 color: $colors['text'];
                 font-weight: bold
                 border-bottom 2px solid $colors['second'];
-                transition 1s 
+                transition 1s
             &.ativo
                color: $colors['text'];
                font-weight: bold
@@ -85,11 +85,12 @@
 
 .logo-interno
     margin-right: 50px;
-    img 
+    img
         width 100px
 
 .item-sub-menu
     position relative
+    overflow hidden
     .sub-menu
         text-align: left;
         position: absolute;
@@ -99,9 +100,10 @@
         padding 10px
         border 1px solid $colors['second'];
         opacity 0
-        transform translate(0,-138%)
-        transition 2s
+        transform translate(0,100%)
+        transition 1s
     &:hover
+        overflow visible
         .sub-menu
             transform translate(0,0)
             opacity 1
@@ -118,7 +120,7 @@
             font-size: 14px
 
 @media screen and (max-width:991px)
-    .header-interno 
+    .header-interno
         background-color $colors['third'];
         border-bottom 1px solid $colors['second'];
     .menu-interno
