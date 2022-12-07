@@ -4,7 +4,7 @@
   "description": "Projeto com biblioteca para front end",
   "main": "gulpfile.js",
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "natives": "^1.1.6",
     "stylus": "^0.54.5"
   },
